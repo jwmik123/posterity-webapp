@@ -8,7 +8,7 @@ import { useFrame } from "@react-three/fiber";
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/FirstWatch7.gltf");
+  const { nodes, materials } = useGLTF("/compressedFirstWatch8.gltf");
 
   useFrame(({clock}) => {
     const a = clock.getElapsedTime();
@@ -21,103 +21,171 @@ export default function Model(props) {
   })
   return (
     <group scale={30} ref={group} {...props} dispose={null}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Case_1.geometry}
-        material={nodes.Case_1.material}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Case_2.geometry}
-        material={nodes.Case_2.material}
-        scale={0.050667}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Wheel.geometry}
-        material={nodes.Wheel.material}
-        position={[0.0536, 0.001674, 0]}
-        rotation={[0, 0, -Math.PI / 2]}
-        scale={0.818004}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Markings.geometry}
-        material={nodes.Markings.material}
-        position={[0, 0.014118, -0.040282]}
-        scale={[0.000617, 0.000441, 0.003517]}
-      />
-      <group
-        position={[0, 0.003839, 0]}
-        rotation={[-Math.PI, 0.596875, -Math.PI]}
-        scale={-0.001397}
-      >
+      <group name="Scene">
         <mesh
+          name="Plane"
           castShadow
           receiveShadow
-          geometry={nodes.Plane004.geometry}
-          material={nodes.Plane004.material}
+          geometry={nodes.Plane.geometry}
+          material={nodes.Plane.material}
+          position={[0, 0.00358916, -0.07435063]}
+          userData={{ name: "Plane" }}
         />
         <mesh
+          name="Case_1"
           castShadow
           receiveShadow
-          geometry={nodes.Plane004_1.geometry}
-          material={nodes.Plane004_1.material}
+          geometry={nodes.Case_1.geometry}
+          material={nodes.Case_1.material}
+          userData={{ name: "Case 1" }}
         />
-      </group>
-      <group rotation={[0, 0.980326, 0]} scale={[0.001273, 0.001273, 0.013018]}>
         <mesh
+          name="Case_2"
           castShadow
           receiveShadow
-          geometry={nodes.Plane003.geometry}
-          material={nodes.Plane003.material}
+          geometry={nodes.Case_2.geometry}
+          material={nodes.Case_2.material}
+          scale={0.05066706}
+          userData={{ name: "Case 2" }}
         />
         <mesh
+          name="Markings"
           castShadow
           receiveShadow
-          geometry={nodes.Plane003_1.geometry}
-          material={nodes.Plane003_1.material}
+          geometry={nodes.Markings.geometry}
+          material={nodes.Markings.material}
+          position={[0, 0.01411833, -0.04028187]}
+          scale={[0.00061711, 0.00044144, 0.0035175]}
+          userData={{ name: "Markings" }}
         />
-      </group>
-      <group
-        rotation={[0, -0.968977, 0]}
-        scale={[-0.00115, -0.00115, -0.018643]}
-      >
         <mesh
+          name="Wheel"
+          castShadow
+          receiveShadow
+          geometry={nodes.Wheel.geometry}
+          material={nodes.Wheel.material}
+          position={[0.05359986, 0.00167413, 0]}
+          rotation={[0, 0, -Math.PI / 2]}
+          scale={0.81800431}
+          userData={{ name: "Wheel" }}
+        />
+        <group
+          name="Second-Hand"
+          position={[0, 0.00383926, 0]}
+          rotation={[-Math.PI, 0.59687453, -Math.PI]}
+          scale={-0.00139732}
+          userData={{ name: "Second-Hand" }}
+        >
+          <mesh
+            name="Plane004"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane004.geometry}
+            material={nodes.Plane004.material}
+          />
+          <mesh
+            name="Plane004_1"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane004_1.geometry}
+            material={nodes.Plane004_1.material}
+          />
+        </group>
+        <group
+          name="Small_Hand"
+          rotation={[0, 0.98032639, 0]}
+          scale={[0.00127337, 0.00127337, 0.01301787]}
+          userData={{ name: "Small Hand" }}
+        >
+          <mesh
+            name="Plane003"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane003.geometry}
+            material={nodes.Plane003.material}
+          />
+          <mesh
+            name="Plane003_1"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane003_1.geometry}
+            material={nodes.Plane003_1.material}
+          />
+        </group>
+        <group
+          name="Big_Hand"
+          rotation={[0, -0.96897734, 0]}
+          scale={[-0.00115023, -0.00115023, -0.01864257]}
+          userData={{ name: "Big Hand" }}
+        >
+          <mesh
+            name="Plane002_1"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane002_1.geometry}
+            material={nodes.Plane002_1.material}
+          />
+          <mesh
+            name="Plane002_2"
+            castShadow
+            receiveShadow
+            geometry={nodes.Plane002_2.geometry}
+            material={nodes.Plane002_2.material}
+          />
+        </group>
+        <mesh
+          name="Cylinder"
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder.geometry}
+          material={nodes.Cylinder.material}
+          position={[0, -0.1373371, -0.00855456]}
+          rotation={[-2.95554066, 0, 0]}
+          userData={{ name: "Cylinder" }}
+        />
+        <mesh
+          name="Dial_1"
+          castShadow
+          receiveShadow
+          geometry={nodes.Dial_1.geometry}
+          material={materials.Dial}
+          position={[0, 0.00252606, 0]}
+          scale={0.04486918}
+          userData={{ name: "Dial 1" }}
+        />
+        <mesh
+          name="Dial_Wave"
+          castShadow
+          receiveShadow
+          geometry={nodes.Dial_Wave.geometry}
+          material={materials["Dial Wave"]}
+          position={[0, 0.0218267, 0]}
+          scale={-0.03296192}
+          userData={{ name: "Dial Wave" }}
+        />
+        <mesh
+          name="Plane002"
           castShadow
           receiveShadow
           geometry={nodes.Plane002.geometry}
           material={nodes.Plane002.material}
+          position={[0, -0.13635659, -0.01338982]}
+          rotation={[-2.95554066, 0, 0]}
+          userData={{ name: "Plane.002" }}
         />
         <mesh
+          name="Plane001"
           castShadow
           receiveShadow
-          geometry={nodes.Plane002_1.geometry}
-          material={nodes.Plane002_1.material}
+          geometry={nodes.Plane001.geometry}
+          material={nodes.Plane001.material}
+          position={[0, 0.00358916, 0.0745193]}
+          rotation={[Math.PI, 0, Math.PI]}
+          userData={{ name: "Plane.001" }}
         />
       </group>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Dial_1.geometry}
-        material={materials.Dial}
-        position={[0, 0.002526, 0]}
-        scale={0.044869}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Dial_Wave.geometry}
-        material={materials["Dial Wave"]}
-        position={[0, 0.021827, 0]}
-        scale={-0.032962}
-      />
     </group>
   );
 }
 
-useGLTF.preload("/FirstWatch7.gltf");
+useGLTF.preload("/compressedFirstWatch8.gltf");
