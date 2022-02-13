@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Header from "../components/Header";
 import LandingPage from "../components/LandingPage";
 import ObjectViewer from "../components/ObjectViewer";
+import Roadmap from "../components/Roadmap";
 export default function Home() {
   return (
     <>
@@ -17,6 +18,8 @@ export default function Home() {
         <Header />
         {/* <LandingPage /> */}
         {/* <ObjectViewer scale="40" modelPath="../assets/watch.glb"/> */}
+
+        <Roadmap />
       </main>
 
       <footer>
