@@ -8,7 +8,7 @@ import { useFrame } from "@react-three/fiber";
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/compressedFirstWatch6.glb");
+  const { nodes, materials } = useGLTF("/FirstWatch7.gltf");
 
   useFrame(({clock}) => {
     const a = clock.getElapsedTime();
@@ -24,40 +24,37 @@ export default function Model(props) {
       <mesh
         castShadow
         receiveShadow
+        geometry={nodes.Case_1.geometry}
+        material={nodes.Case_1.material}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Case_2.geometry}
+        material={nodes.Case_2.material}
+        scale={0.050667}
+      />
+      <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Wheel.geometry}
         material={nodes.Wheel.material}
-        position={[0.05359986, 0.00167413, 0]}
+        position={[0.0536, 0.001674, 0]}
         rotation={[0, 0, -Math.PI / 2]}
-        scale={0.81800431}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Dial_1.geometry}
-        material={materials.Dial}
-        position={[0, 0.00252606, 0]}
-        scale={0.04486918}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Dial_Wave.geometry}
-        material={materials["Dial Wave"]}
-        position={[0, 0.0218267, 0]}
-        scale={-0.03296192}
+        scale={0.818004}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Markings.geometry}
         material={nodes.Markings.material}
-        position={[0, 0.01411833, -0.04028187]}
-        scale={[0.00061711, 0.00044144, 0.0035175]}
+        position={[0, 0.014118, -0.040282]}
+        scale={[0.000617, 0.000441, 0.003517]}
       />
       <group
-        position={[0, 0.00383926, 0]}
-        rotation={[-Math.PI, 0.59687453, -Math.PI]}
-        scale={-0.00139732}
+        position={[0, 0.003839, 0]}
+        rotation={[-Math.PI, 0.596875, -Math.PI]}
+        scale={-0.001397}
       >
         <mesh
           castShadow
@@ -72,10 +69,7 @@ export default function Model(props) {
           material={nodes.Plane004_1.material}
         />
       </group>
-      <group
-        rotation={[0, 0.98032639, 0]}
-        scale={[0.00127337, 0.00127337, 0.01301787]}
-      >
+      <group rotation={[0, 0.980326, 0]} scale={[0.001273, 0.001273, 0.013018]}>
         <mesh
           castShadow
           receiveShadow
@@ -90,8 +84,8 @@ export default function Model(props) {
         />
       </group>
       <group
-        rotation={[0, -0.96897734, 0]}
-        scale={[-0.00115023, -0.00115023, -0.01864257]}
+        rotation={[0, -0.968977, 0]}
+        scale={[-0.00115, -0.00115, -0.018643]}
       >
         <mesh
           castShadow
@@ -109,18 +103,21 @@ export default function Model(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Case_2.geometry}
-        material={nodes.Case_2.material}
-        scale={0.05066706}
+        geometry={nodes.Dial_1.geometry}
+        material={materials.Dial}
+        position={[0, 0.002526, 0]}
+        scale={0.044869}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Case_1.geometry}
-        material={nodes.Case_1.material}
+        geometry={nodes.Dial_Wave.geometry}
+        material={materials["Dial Wave"]}
+        position={[0, 0.021827, 0]}
+        scale={-0.032962}
       />
     </group>
   );
 }
 
-useGLTF.preload("/compressedFirstWatch6.glb");
+useGLTF.preload("/FirstWatch7.gltf");
