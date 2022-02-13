@@ -5,9 +5,10 @@ import {AiFillInstagram} from "react-icons/ai"
 
 function Header() {
   return (
-    <nav className="h-50 sticky flex items-center justify-between py-10 px-5 lg:px-20">
+    <div className="fixed top-0 z-50 w-full">
+      <nav className="h-50 flex w-full relative items-center justify-between py-10 px-5 lg:px-20">
       <div className="bg-slate-100 text-slate-900 font-bebas text-2xl p-2 rounded h-11" data-aos="fade-in" data-aos-delay="100">Posterity</div>
-      <ul className="hidden lg:flex gap-10 items-center font-poppins text-slate-100">
+      <ul className=" hidden lg:flex gap-10 items-center font-poppins text-slate-100">
         <li  data-aos="fade-in" data-aos-delay="100">Home</li>
         <li  data-aos="fade-in" data-aos-delay="200">Roadmap</li>
         <li  data-aos="fade-in" data-aos-delay="300">Gallery</li>
@@ -26,6 +27,8 @@ function Header() {
 </ul>
       </ul>
     </nav>
+    </div>
+   
   )
 }
 
