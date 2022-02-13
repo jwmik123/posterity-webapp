@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 
 import Header from "../components/Header";
 import LandingPage from "../components/LandingPage";
-import ObjectViewer from "../components/ObjectViewer";
 import Roadmap from "../components/Roadmap";
 export default function Home() {
   return (
