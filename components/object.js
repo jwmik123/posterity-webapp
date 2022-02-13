@@ -8,7 +8,7 @@ import { useFrame } from "@react-three/fiber";
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/FirstWatch3.glb");
+  const { nodes, materials } = useGLTF("/FirstWatch5.glb");
 
   useFrame(({clock}) => {
     const a = clock.getElapsedTime();
@@ -137,21 +137,21 @@ export default function Model(props) {
     <mesh
       castShadow
       receiveShadow
-      geometry={nodes.Dial_1.geometry}
-      material={materials.Dial}
-      position={[0, 0.00252606, 0]}
-      scale={0.04486918}
-    />
-    <mesh
-      castShadow
-      receiveShadow
       geometry={nodes.Dial_Wave.geometry}
       material={materials["Dial Wave"]}
       position={[0, 0.0218267, 0]}
       scale={-0.03296192}
     />
+    <mesh
+      castShadow
+      receiveShadow
+      geometry={nodes.Dial_1.geometry}
+      material={materials.Dial}
+      position={[0, 0.00252606, 0]}
+      scale={0.04486918}
+    />
   </group>
   );
 }
 
-useGLTF.preload("/FirstWatch3.glb");
+useGLTF.preload("/FirstWatch5.glb");
