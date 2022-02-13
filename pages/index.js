@@ -14,11 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-slate-200  w-full">
+      <main className="bg-slate-900 w-full">
         <Header />
-        {/* <LandingPage /> */}
-        {/* <ObjectViewer scale="40" modelPath="../assets/watch.glb"/> */}
-
+        <LandingPage />
         <Roadmap />
       </main>
 
