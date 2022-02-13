@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* COLORS */
+/* $primary-color: slate-300 */
+/* secondary-color: slate-900 */
+/* gray: slate-600 */
+
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("/fonts/BebasNeue-Regular.ttf");
+  font-style: medium;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("/fonts/Poppings-Light.ttf");
+  font-style: medium;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("/fonts/Poppings-Regular.ttf");
+  font-style: medium;
+  font-weight: 400;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
