@@ -18,7 +18,7 @@ function LandingPage() {
         <Canvas>
           <Suspense fallback={<Loader/>}>
             <Object/>
-            {/* <OrbitControls enableZoom={false} /> */}
+            <OrbitControls enableZoom={false} />
             <Environment preset="sunset" />
           </Suspense>
         </Canvas>

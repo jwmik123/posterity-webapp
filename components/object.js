@@ -8,7 +8,7 @@ import { useFrame } from "@react-three/fiber";
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/FirstWatch5.glb");
+  const { nodes, materials } = useGLTF("/FirstWatch6.glb");
 
   useFrame(({clock}) => {
     const a = clock.getElapsedTime();
@@ -21,137 +21,106 @@ export default function Model(props) {
   })
   return (
     <group scale={30} ref={group} {...props} dispose={null}>
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Case_1.geometry}
-      material={nodes.Case_1.material}
-    />
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Case_2.geometry}
-      material={nodes.Case_2.material}
-      scale={0.05066706}
-    />
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Wheel.geometry}
-      material={nodes.Wheel.material}
-      position={[0.05359986, 0.00167413, 0]}
-      rotation={[0, 0, -Math.PI / 2]}
-      scale={0.81800431}
-    />
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Plane.geometry}
-      material={nodes.Plane.material}
-      position={[0, 0.00358916, -0.07435063]}
-    />
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Plane001.geometry}
-      material={nodes.Plane001.material}
-      position={[0, 0.00358916, 0.0745193]}
-      rotation={[Math.PI, 0, Math.PI]}
-    />
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Markings.geometry}
-      material={nodes.Markings.material}
-      position={[0, 0.01411833, -0.04028187]}
-      scale={[0.00061711, 0.00044144, 0.0035175]}
-    />
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Cylinder.geometry}
-      material={nodes.Cylinder.material}
-      position={[0, -0.1373371, -0.00855456]}
-      rotation={[-2.95554066, 0, 0]}
-    />
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Plane002.geometry}
-      material={nodes.Plane002.material}
-      position={[0, -0.13635659, -0.01338982]}
-      rotation={[-2.95554066, 0, 0]}
-    />
-    <group
-      position={[0, 0.00383926, 0]}
-      rotation={[-Math.PI, 0.59687453, -Math.PI]}
-      scale={-0.00139732}
-    >
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plane004.geometry}
-        material={nodes.Plane004.material}
+        geometry={nodes.Case_1.geometry}
+        material={nodes.Case_1.material}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plane004_1.geometry}
-        material={nodes.Plane004_1.material}
-      />
-    </group>
-    <group
-      rotation={[0, 0.98032639, 0]}
-      scale={[0.00127337, 0.00127337, 0.01301787]}
-    >
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane003.geometry}
-        material={nodes.Plane003.material}
+        geometry={nodes.Case_2.geometry}
+        material={nodes.Case_2.material}
+        scale={0.0506671}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plane003_1.geometry}
-        material={nodes.Plane003_1.material}
-      />
-    </group>
-    <group
-      rotation={[0, -0.96897734, 0]}
-      scale={[-0.00115023, -0.00115023, -0.01864257]}
-    >
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane002_1.geometry}
-        material={nodes.Plane002_1.material}
+        geometry={nodes.Wheel.geometry}
+        material={nodes.Wheel.material}
+        position={[0.0535999, 0.0016741, 0]}
+        rotation={[0, 0, -Math.PI / 2]}
+        scale={0.8180043}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plane002_2.geometry}
-        material={nodes.Plane002_2.material}
+        geometry={nodes.Markings.geometry}
+        material={nodes.Markings.material}
+        position={[0, 0.0141183, -0.0402819]}
+        scale={[0.0006171, 0.0004414, 0.0035175]}
+      />
+      <group
+        position={[0, 0.0038393, 0]}
+        rotation={[-Math.PI, 0.5968745, -Math.PI]}
+        scale={-0.0013973}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane004.geometry}
+          material={nodes.Plane004.material}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane004_1.geometry}
+          material={nodes.Plane004_1.material}
+        />
+      </group>
+      <group
+        rotation={[0, 0.9803264, 0]}
+        scale={[0.0012734, 0.0012734, 0.0130179]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane003.geometry}
+          material={nodes.Plane003.material}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane003_1.geometry}
+          material={nodes.Plane003_1.material}
+        />
+      </group>
+      <group
+        rotation={[0, -0.9689773, 0]}
+        scale={[-0.0011502, -0.0011502, -0.0186426]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane002.geometry}
+          material={nodes.Plane002.material}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane002_1.geometry}
+          material={nodes.Plane002_1.material}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Dial_1.geometry}
+        material={materials.Dial}
+        position={[0, 0.0025261, 0]}
+        scale={0.0448692}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Dial_Wave.geometry}
+        material={materials["Dial Wave"]}
+        position={[0, 0.0218267, 0]}
+        scale={-0.0329619}
       />
     </group>
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Dial_Wave.geometry}
-      material={materials["Dial Wave"]}
-      position={[0, 0.0218267, 0]}
-      scale={-0.03296192}
-    />
-    <mesh
-      castShadow
-      receiveShadow
-      geometry={nodes.Dial_1.geometry}
-      material={materials.Dial}
-      position={[0, 0.00252606, 0]}
-      scale={0.04486918}
-    />
-  </group>
   );
 }
 
-useGLTF.preload("/FirstWatch5.glb");
+useGLTF.preload("/FirstWatch6.glb");
