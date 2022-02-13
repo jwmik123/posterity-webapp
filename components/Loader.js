@@ -1,13 +1,12 @@
 import React from 'react'
-import {
-    Html,
-    useProgress
-  } from "@react-three/drei";
-
+import {Html, useProgress} from "@react-three/drei";
 const Loader = () => {
-    const {progress} = useProgress();
+  // const {progress, loaded} = useProgress();
   return (
-    <Html center>{progress}% loaded</Html>
+    <>
+    <Html center><div className="h-5 w-5 animate-spin">-</div></Html>
+    </>
+    
   )
 }
 

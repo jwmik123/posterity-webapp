@@ -16,6 +16,8 @@ export default function Model(props) {
     group.current.rotation.y = Math.sin(a / 4) / 8;
     group.current.rotation.z = (1 + Math.sin(a / 1.5)) / 20;
     group.current.position.y = (1 + Math.sin(a / 1.5)) / 10;
+
+    group.current.opacity = 0;
   })
   return (
     <group scale={55} ref={group} {...props} dispose={null}>

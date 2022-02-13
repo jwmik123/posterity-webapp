@@ -6,17 +6,17 @@ import {AiFillInstagram} from "react-icons/ai"
 function Header() {
   return (
     <nav className="h-50 sticky flex items-center justify-between py-10 px-5 lg:px-20">
-      <div className="bg-slate-100 text-slate-900 font-bebas text-2xl p-2 rounded h-11">Posterity</div>
+      <div className="bg-slate-100 text-slate-900 font-bebas text-2xl p-2 rounded h-11" data-aos="fade-in" data-aos-delay="100">Posterity</div>
       <ul className="hidden lg:flex gap-10 items-center font-poppins text-slate-100">
-        <li>Home</li>
-        <li>Roadmap</li>
-        <li>Gallery</li>
-        <li>Mint NFT</li>
+        <li  data-aos="fade-in" data-aos-delay="100">Home</li>
+        <li  data-aos="fade-in" data-aos-delay="200">Roadmap</li>
+        <li  data-aos="fade-in" data-aos-delay="300">Gallery</li>
+        <li  data-aos="fade-in" data-aos-delay="400">Mint NFT</li>
         <ul className="flex divide-x divide-slate-100 items-center">
-        <li><AiFillInstagram className="text-xl mx-5"/></li>
-        <li><FaDiscord className="text-xl mx-5"/></li>
-        <li><FaTwitter className="text-xl mx-5"/></li>
-        <li className="px-5">
+        <li  data-aos="fade-in" data-aos-delay="500"><AiFillInstagram className="text-xl mx-5"/></li>
+        <li  data-aos="fade-in" data-aos-delay="600"><FaDiscord className="text-xl mx-5"/></li>
+        <li  data-aos="fade-in" data-aos-delay="700"><FaTwitter className="text-xl mx-5"/></li>
+        <li className="px-5"  data-aos="fade-in" data-aos-delay="800">
           <svg width="22" height="22" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M90 45C90 69.8514 69.8514 90 45 90C20.1486 90 0 69.8514 0 45C0 20.1486 20.1486 0 45 0C69.8566 0 90 20.1486 90 45Z" fill="#0f172a"/>
             <path d="M22.2011 46.512L22.3953 46.2069L34.1016 27.8939C34.2726 27.6257 34.6749 27.6535 34.8043 27.9447C36.76 32.3277 38.4475 37.7786 37.6569 41.1721C37.3194 42.5683 36.3948 44.4593 35.3545 46.2069C35.2204 46.4612 35.0725 46.7109 34.9153 46.9513C34.8413 47.0622 34.7165 47.127 34.5824 47.127H22.5432C22.2196 47.127 22.0301 46.7756 22.2011 46.512Z" fill="white"/>
