@@ -7,7 +7,9 @@ function Header() {
   return (
     <div className="fixed top-0 z-50 w-full">
       <nav className="h-50 flex w-full relative items-center justify-between py-10 px-5 lg:px-48">
-      <div className="bg-slate-100 text-slate-900 font-bebas text-2xl p-2 rounded h-11" data-aos="fade-in" data-aos-delay="100">Posterity</div>
+      <div className="bg-rose-600 text-slate-100 font-bebas text-3xl py-2 px-4 rounded h-18"
+      //  data-aos="fade-in" data-aos-delay="100"
+       >Posterity.</div>
       <ul className=" hidden lg:flex gap-10 items-center font-poppins text-slate-100">
         <li  data-aos="fade-in" data-aos-delay="100">Home</li>
         <li  data-aos="fade-in" data-aos-delay="200">Roadmap</li>
