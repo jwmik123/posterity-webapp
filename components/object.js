@@ -24,22 +24,23 @@ export default function Model(props) {
       const pi = Math.PI;
       return degrees * (pi/180);
     }
+
     const interval = setInterval(() => {
       let hr_rotation = -(30 * hours + minutes / 2); //converting current time
       let min_rotation = -(6 * minutes);
       let sec_rotation = 6 * seconds;
 
-     let radianHr = degrees_to_radians(hr_rotation);
-     let radianMin = degrees_to_radians(min_rotation);
-     let radianSec = degrees_to_radians(sec_rotation);
+      let radianHr = degrees_to_radians(hr_rotation);
+      let radianMin = degrees_to_radians(min_rotation);
+      let radianSec = degrees_to_radians(sec_rotation);
 
-     degrees_to_radians(hr_rotation);
-     degrees_to_radians(min_rotation);
-     degrees_to_radians(sec_rotation);
+      degrees_to_radians(hr_rotation);
+      degrees_to_radians(min_rotation);
+      degrees_to_radians(sec_rotation);
 
-     setSmallHand(radianHr);
-     setBigHand(radianMin);
-     setSecondHand(radianSec);
+      setSmallHand(radianHr);
+      setBigHand(radianMin);
+      setSecondHand(radianSec);
     }, 1000)
     return () => clearInterval(interval);
   }, [secondHand])
@@ -54,7 +55,7 @@ export default function Model(props) {
     group.current.opacity = 0;
   })
   return (
-    <group scale={30} ref={group} {...props} dispose={null}>
+    <group scale={40} ref={group} {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
