@@ -9,13 +9,14 @@ function LandingPage() {
   const [opacity, setOpacity] = useState(0);
 
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       setOpacity(100);
     }, 1000)
-  }, [])
+    return () => clearInterval(interval);
+  }, [setOpacity])
 
   return (
-    <div className="px-5 md:px-20 lg:px-48 h-[100vh] bg-gradient-to-b from-slate-900 via-slate-800 to-slate-700 font-poppins flex items-center relative text-slate-100">
+    <div className="px-5 md:px-20 lg:px-48 h-[90vh] bg-gradient-to-b from-slate-900 via-slate-800 to-slate-700 font-poppins flex items-center relative text-slate-100">
       <div className="z-10 relative w-1/2 flex flex-col">
         <h1 className="text-6xl lg:text-[180px] xl:text-[220px] font-bebas leading" data-aos="fade-up"  data-aos-delay="400">Posterity Watches</h1>
         <h3 className="text-2xl text-slate-500 font-poppins font-light"  data-aos="fade-up" data-aos-delay="500">&#47;&#47; A Metaverse Luxury Brand &#47;&#47;</h3>
@@ -23,7 +24,7 @@ function LandingPage() {
           <h2 className="text-xl text-slate-100">Connect wallet</h2>
         </div>
       </div>
-      <div className={`absolute h-full w-1/2 right-0 opacity-${opacity} transition-opacity duration-500`}>
+      <div className={`absolute h-full w-1/2 right-0 opacity-${opacity} transition-opacity duration-1000`}>
         <Canvas>
           <Suspense fallback={<Loader/>}>
             <Object/>

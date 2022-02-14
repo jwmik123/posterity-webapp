@@ -6,7 +6,7 @@ import OpenSea from "../assets/opensea.svg";
 
 function Header() {
   return (
-    <div className="fixed top-0 z-50 w-full">
+    <div className="top-0 z-50 w-full sticky">
       <nav className="h-50 flex w-full relative items-center justify-between py-10 px-5 md:px-20 lg:px-48">
       <div className="bg-rose-600 text-slate-100 font-bebas text-3xl py-2 px-4 rounded h-18"
        data-aos="fade-in" data-aos-delay="100"
