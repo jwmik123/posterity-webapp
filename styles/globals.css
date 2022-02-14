@@ -7,7 +7,6 @@
 /* secondary-color: slate-900 */
 /* gray: slate-600 */
 
-
 @font-face {
   font-family: "Bebas Neue";
   src: url("/fonts/BebasNeue-Regular.ttf");
@@ -47,4 +46,10 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@layer components {
+  .nav-item {
+    @apply cursor-pointer active:border-b-2 border-b-slate-100;
+  }
 }
