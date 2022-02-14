@@ -26,7 +26,8 @@ export default function Model(props) {
     }
 
     const interval = setInterval(() => {
-      let hr_rotation = -(30 * hours + minutes / 2); //converting current time
+      // Converting current time to 360 degree scale
+      let hr_rotation = -(30 * hours + minutes / 2); 
       let min_rotation = -(6 * minutes);
       let sec_rotation = 6 * seconds;
 
@@ -34,16 +35,14 @@ export default function Model(props) {
       let radianMin = degrees_to_radians(min_rotation);
       let radianSec = degrees_to_radians(sec_rotation);
 
-      degrees_to_radians(hr_rotation);
-      degrees_to_radians(min_rotation);
-      degrees_to_radians(sec_rotation);
-
       setSmallHand(radianHr);
       setBigHand(radianMin);
       setSecondHand(radianSec);
     }, 1000)
+
+    // We have to clear the interval in order for the hands to update correctly
     return () => clearInterval(interval);
-  }, [secondHand])
+  })
 
   useFrame(({clock}) => {
     const a = clock.getElapsedTime();
@@ -82,7 +81,7 @@ export default function Model(props) {
         scale={0.04486918}
       />
 
-      {/* second hand */}
+      {/* seconds hand */}
       <group
         position={[0, 0.00383926, 0]}
         rotation={[-Math.PI, secondHand, -Math.PI]}
@@ -101,7 +100,8 @@ export default function Model(props) {
           material={nodes.Plane004_1.material}
         />
       </group>
-        {/* big hand */}
+
+      {/* Minutes hand */}
       <group
         rotation={[0, bigHand, 0]}
         scale={[-0.00115023, -0.00115023, -0.01864257]}
@@ -121,7 +121,7 @@ export default function Model(props) {
         />
       </group>
 
-      {/* small hand */}
+      {/* Hours hand */}
       <group
         rotation={[0, smallHand, 0]}
         scale={[0.00127337, 0.00127337, 0.01301787]}
