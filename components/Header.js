@@ -1,15 +1,37 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {Image} from 'next/image';
 import { FaTwitter, FaDiscord } from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
 import OpenSea from "../assets/opensea.svg";
 
 function Header() {
+
+  const [colorChange, setColorChange] = useState(false);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY > 200) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbarColor);
+  });
+
   return (
     <div className="top-0 z-50 w-full sticky">
-      <nav className="h-50 flex w-full relative items-center justify-between py-10 px-5 md:px-20 lg:px-48">
-      <div className="bg-rose-600 text-slate-100 font-bebas text-3xl py-2 px-4 rounded h-18"
-       data-aos="fade-in" data-aos-delay="100"
+      <nav 
+        className={ 
+          colorChange ? "h-50 flex w-full bg-slate-900 relative items-center justify-between py-2 px-5 md:px-20 lg:px-48" 
+          : "h-50 flex w-full relative items-center justify-between py-10 px-5 md:px-20 lg:px-48"
+        }>
+      <div className={
+        colorChange ? "bg-rose-600 text-slate-100 font-bebas text-2xl py-1 px-2 rounded h-18"
+        : "bg-rose-600 text-slate-100 font-bebas text-3xl py-2 px-4 rounded h-18"
+      }
+      //  data-aos="fade-in" data-aos-delay="100"
        >Posterity.</div>
       <ul className=" hidden lg:flex gap-10 items-center font-poppins text-slate-100">
         <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
