@@ -12,7 +12,7 @@ const Roadmap = () => {
             <p className="text-lg font-light">- Launching the first 10k NFT collection.</p>
           </div>
           <div className="py-14"  data-aos="fade-up" data-aos-delay="100">
-            <h2 className="text-4xl pb-4 font-bebas text-slate-900">&#47;&#47;02 The clock's ticking.</h2>
+            <h2 className="text-4xl pb-4 font-bebas text-slate-900">&#47;&#47;02 The clock&apos;s ticking.</h2>
             <div className="text-slate-900">
               <p className="text-lg font-light">- Making the Watches wearable.</p>
               <p className="text-lg font-light">- Finding the best metaverse for Posterity.</p>
@@ -20,7 +20,7 @@ const Roadmap = () => {
             </div>
           </div>
           <div className="py-14"  data-aos="fade-up" data-aos-delay="200">
-            <h2 className="text-4xl pb-4 font-bebas text-slate-900">&#47;&#47;03 We're in.</h2>
+            <h2 className="text-4xl pb-4 font-bebas text-slate-900">&#47;&#47;03 We&apos;re in.</h2>
             <div className="text-slate-900">
               <p className="text-lg font-light">- Exploring the metaverse.</p>
               <p className="text-lg font-light">- Dropping our 2nd collection.</p>
