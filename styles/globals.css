@@ -52,4 +52,8 @@ a {
   .nav-item {
     @apply cursor-pointer active:border-b-2 border-b-slate-100;
   }
+
+  .socials {
+    @apply cursor-pointer -translate-y-5 transition duration-100;
+  }
 }

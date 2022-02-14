@@ -54,7 +54,7 @@ export default function Model(props) {
     group.current.opacity = 0;
   })
   return (
-    <group scale={40} ref={group} {...props} dispose={null}>
+    <group scale={50} ref={group} {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow
@@ -117,7 +117,6 @@ export default function Model(props) {
           receiveShadow
           geometry={nodes.Plane002_1.geometry}
           material={nodes.Plane002_1.material}
-          rotation
         />
       </group>
 
@@ -140,13 +139,12 @@ export default function Model(props) {
         />
       </group>
 
-      
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Dial_Wave.geometry}
         material={materials["Dial Wave"]}
-        position={[0, 0.0218267, 0]}
+        position={[0, 0.0215997, 0]}
         scale={-0.03296192}
       />
       <mesh
