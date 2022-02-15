@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "@react-three/drei": "^8.8.4",
     "@react-three/fiber": "^7.0.26",
     "aos": "^3.0.0-beta.6",

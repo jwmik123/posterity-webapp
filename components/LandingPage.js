@@ -5,16 +5,6 @@ import Loader from "./Loader";
 import Object from "./object";
 
 function LandingPage() {
-
-  const [opacity, setOpacity] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setOpacity(100);
-    }, 1000)
-    return () => clearInterval(interval);
-  }, [setOpacity])
-
   return (
     <div className="px-5 md:px-20 lg:px-48 h-[90vh] bg-gradient-to-b from-slate-900 via-slate-800 to-slate-700 font-poppins flex items-center relative text-slate-100">
       <div className="z-10 relative w-1/2 flex flex-col">
@@ -24,10 +14,10 @@ function LandingPage() {
           <h2 className="text-xl text-slate-100">Connect wallet</h2>
         </div>
       </div>
-      <div className={`absolute h-full w-1/2 right-0 opacity-${opacity} transition-opacity duration-1000`}>
+      <div className={`absolute h-full w-1/2 right-0`}>
         <Canvas>
           <Suspense fallback={<Loader/>}>
-            <Object/>
+            <Object />
             <OrbitControls enableZoom={false} />
             <Environment preset="sunset" />
           </Suspense>

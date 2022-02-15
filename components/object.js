@@ -25,7 +25,7 @@ export default function Model(props) {
       // Converting current time to 360 degree scale
       let hr_rotation = -(30 * hours + minutes / 2); 
       let min_rotation = -(6 * minutes);
-      let sec_rotation = 6 * seconds;
+      let sec_rotation = (6 * seconds) + 180;
 
       let radianHr = degrees_to_radians(hr_rotation);
       let radianMin = degrees_to_radians(min_rotation);
@@ -78,7 +78,7 @@ export default function Model(props) {
       {/* seconds hand */}
       <group
         position={[0, 0.00383926, 0]}
-        rotation={[-Math.PI, secondHand, -Math.PI]}
+        rotation={[-Math.PI, secondHand, Math.PI]}
         scale={-0.00139732}
       >
         <mesh
