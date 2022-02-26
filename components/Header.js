@@ -9,7 +9,7 @@ function Header() {
   const [colorChange, setColorChange] = useState(false);
 
   const changeNavbarColor = () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY >= 80) {
       setColorChange(true);
     } else {
       setColorChange(false);
@@ -21,11 +21,11 @@ function Header() {
   });
 
   return (
-    <div className="top-0 z-50 w-full sticky">
+    <div className="top-0 z-50">
       <nav 
         className={ 
-          colorChange ? "h-50 flex w-full bg-slate-900 relative items-center justify-between py-2 px-5 md:px-20 lg:px-48" 
-          : "h-50 flex w-full relative items-center justify-between py-10 px-5 md:px-20 lg:px-48"
+          colorChange ? "z-50 flex w-full bg-slate-900 fixed items-center justify-between py-2 px-5 md:px-20 lg:px-48" 
+          : "z-50 flex w-full items-center fixed justify-between py-10 px-5 md:px-20 lg:px-48"
         }>
       <div className={
         colorChange ? "bg-rose-600 text-slate-100 font-bebas text-2xl py-1 px-2 rounded h-18"
@@ -33,7 +33,7 @@ function Header() {
       }
       //  data-aos="fade-in" data-aos-delay="100"
        >Posterity.</div>
-      <ul className=" hidden lg:flex gap-10 items-center font-poppins text-slate-100">
+      <ul className="hidden lg:flex gap-10 items-center font-poppins text-slate-100">
         <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
         <li className="nav-item" data-aos="fade-in" data-aos-delay="200">Roadmap</li>
         <li className="nav-item" data-aos="fade-in" data-aos-delay="300">Gallery</li>

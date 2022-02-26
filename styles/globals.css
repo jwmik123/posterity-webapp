@@ -59,4 +59,8 @@ a {
   .socials {
     @apply cursor-pointer;
   }
+
+  .creator {
+    @apply rounded-xl relative text-center;
+  }
 }

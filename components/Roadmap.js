@@ -3,7 +3,7 @@ import React from 'react'
 const Roadmap = () => {
   return (
     <>
-      <div className="h-[100vh] px-10 md:px-20 lg:px-48 py-20 bg-gradient-to-r from-rose-900 to-rose-700 text-slate-100 z-50">
+      <div className="px-10 md:px-20 lg:px-48 py-20 bg-gradient-to-r from-rose-900 to-rose-700 text-slate-100 z-50">
         <h1 className="text-7xl font-bebas" data-aos="fade-up">Roadmap</h1>
         <div className="flex flex-row justify-between border-t-4 border-t-rose-400 border-b-4 border-b-rose-400 mt-10">
           <div className="py-14"  data-aos="fade-up">
