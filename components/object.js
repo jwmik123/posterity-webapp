@@ -265,6 +265,107 @@ export default function Model(props) {
       scale={0.0507}
     />
   </group>
+  // <group scale={45} ref={group} {...props} dispose={null}>
+  //     <mesh
+  //       castShadow
+  //       receiveShadow
+  //       geometry={nodes.Case_1.geometry}
+  //       material={nodes.Case_1.material}
+  //     />
+  //     <mesh
+  //       castShadow
+  //       receiveShadow
+  //       geometry={nodes.Case_2.geometry}
+  //       material={nodes.Case_2.material}
+  //       scale={0.051}
+  //     />
+  //     <mesh
+  //       castShadow
+  //       receiveShadow
+  //       geometry={nodes.Wheel.geometry}
+  //       material={nodes.Wheel.material}
+  //       position={[0.054, 0.002, 0]}
+  //       rotation={[0, 0, -Math.PI / 2]}
+  //       scale={0.818}
+  //     />
+  //     <mesh
+  //       castShadow
+  //       receiveShadow
+  //       geometry={nodes.Markings.geometry}
+  //       material={nodes.Markings.material}
+  //       position={[0, 0.014, -0.04]}
+  //       scale={[0.001, 0, 0.004]}
+  //     />
+  //     <group
+  //       position={[0, 0.004, 0]}
+  //       rotation={[-Math.PI, 0.597, -Math.PI]}
+  //       scale={-0.001}
+  //     >
+  //       <mesh
+  //         castShadow
+  //         receiveShadow
+  //         geometry={nodes.Plane004.geometry}
+  //         material={nodes.Plane004.material}
+  //       />
+  //       <mesh
+  //         castShadow
+  //         receiveShadow
+  //         geometry={nodes.Plane004_1.geometry}
+  //         material={nodes.Plane004_1.material}
+  //       />
+  //     </group>
+  //     <group rotation={[0, 0.98, 0]} scale={[0.001, 0.001, 0.013]}>
+  //       <mesh
+  //         castShadow
+  //         receiveShadow
+  //         geometry={nodes.Plane003.geometry}
+  //         material={nodes.Plane003.material}
+  //       />
+  //       <mesh
+  //         castShadow
+  //         receiveShadow
+  //         geometry={nodes.Plane003_1.geometry}
+  //         material={nodes.Plane003_1.material}
+  //       />
+  //     </group>
+  //     <group rotation={[0, -0.969, 0]} scale={[-0.001, -0.001, -0.019]}>
+  //       <mesh
+  //         castShadow
+  //         receiveShadow
+  //         geometry={nodes.Plane002.geometry}
+  //         material={nodes.Plane002.material}
+  //       />
+  //       <mesh
+  //         castShadow
+  //         receiveShadow
+  //         geometry={nodes.Plane002_1.geometry}
+  //         material={nodes.Plane002_1.material}
+  //       />
+  //     </group>
+  //     <mesh
+  //       castShadow
+  //       receiveShadow
+  //       geometry={nodes.Dial_Wave.geometry}
+  //       material={materials["Dial Wave"]}
+  //       position={[0, 0.022, 0]}
+  //       scale={-0.033}
+  //     />
+  //     <mesh
+  //       castShadow
+  //       receiveShadow
+  //       geometry={nodes.Dial_1.geometry}
+  //       material={materials.Dial}
+  //       position={[0, 0.003, 0]}
+  //       scale={0.045}
+  //     />
+  //     <mesh
+  //       castShadow
+  //       receiveShadow
+  //       geometry={nodes.Glass.geometry}
+  //       material={glass}
+  //       scale={0.051}
+  //     />
+  //   </group>
   );
 }
 

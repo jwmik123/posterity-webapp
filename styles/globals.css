@@ -37,9 +37,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
     scroll-behavior: smooth;
-  
 }
 
 a {
@@ -62,5 +60,9 @@ a {
 
   .creator {
     @apply rounded-xl relative text-center;
+  }
+
+  .banner-button {
+    @apply bg-slate-200 text-slate-900 px-5 py-2 rounded-md text-lg hover:scale-105 transition
   }
 }
