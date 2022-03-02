@@ -42,7 +42,6 @@ const Roadmap = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="roadmap-piece">
             <h2 className="border-b-4 font-bebas text-5xl w-1/2 mb-5">01 First launch.</h2>
-            <p>Pushing P</p>
             <p>Hit 100k community members before first launch.</p>
             <p>Hit 100k community members before first launch.</p>
             <p>Hit 100k community members before first launch.</p>
@@ -51,15 +50,27 @@ const Roadmap = () => {
           <div className="spacing"></div>
           <div className="spacing"></div>
           <div className="roadmap-piece">
-            <h2>02 // The clock&apos;s ticking.</h2>
+            <h2 className="border-b-4 font-bebas text-5xl w-1/2 mb-5">02 // The clock&apos;s ticking.</h2>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
             </div>
           <div className="roadmap-piece">
-            <h2>03 // We&apos;re in.</h2>
+            <h2 className="border-b-4 font-bebas text-5xl w-1/2 mb-5">03 // We&apos;re in.</h2>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+          <p>Hit 100k community members before first launch.</p>
           </div>
           <div className="spacing"></div>
           <div className="spacing"></div>
           <div className="roadmap-piece">
-            <h2>04 // We&apos;re here to stay.</h2>
+            <h2 className="border-b-4 font-bebas text-5xl w-1/2 mb-5">04 // We&apos;re here to stay.</h2>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
           </div>
         </div>
       </div>

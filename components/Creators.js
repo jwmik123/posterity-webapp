@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import watch from "../assets/rendered1.png"
+import watch from "../public/images/rendered1.png"
 
 const Creators = () => {
   return (

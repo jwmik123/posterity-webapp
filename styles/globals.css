@@ -74,7 +74,7 @@ h4 {
   }
 
   .roadmap-piece {
-    @apply border-slate-300 text-slate-300 border-2 text-center py-10 px-5 rounded-xl flex flex-col items-center;
+    @apply bg-slate-400 text-slate-900 shadow-xl text-center py-10 px-5 rounded-xl flex flex-col items-center;
   }
   .spacing {
     @apply hidden md:block;
