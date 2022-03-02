@@ -49,6 +49,13 @@ a {
   box-sizing: border-box;
 }
 
+h2 {
+  @apply text-4xl font-poppins;
+}
+h4 {
+  @apply text-xl font-poppins;
+}
+
 @layer components {
   .nav-item {
     @apply cursor-pointer active:border-b-2 border-b-slate-100;
@@ -59,10 +66,17 @@ a {
   }
 
   .creator {
-    @apply rounded-xl relative text-center;
+    @apply text-center relative mb-20 box-content;
   }
 
   .banner-button {
     @apply bg-slate-200 text-slate-900 px-5 py-2 rounded-md text-lg hover:scale-105 transition
+  }
+
+  .roadmap-piece {
+    @apply border-slate-300 text-slate-300 border-2 text-center py-10 px-5 rounded-xl flex flex-col items-center;
+  }
+  .spacing {
+    @apply hidden md:block;
   }
 }

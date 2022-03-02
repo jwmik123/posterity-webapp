@@ -3,9 +3,9 @@ import React from 'react'
 const Roadmap = () => {
   return (
     <>
-      <div className=" text-slate-100 z-50" data-aos="fade-up">
+      {/* <div className=" text-slate-100 z-50" data-aos="fade-up">
         <div className="mx-5 px-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 py-20 bg-gradient-to-r from-rose-900 to-rose-700 rounded-3xl">
-        <h1 className="text-7xl font-bebas" data-aos="fade-up">Roadmap</h1>
+        <h1 className="text-7xl font-bebas" data-aos="fade-up">Roadmap.</h1>
         <div className="flex flex-row justify-between">
           <div className="py-14"  data-aos="fade-up">
             <h2 className="text-4xl pb-4 font-bebas">&#47;&#47;01 first launch.</h2>
@@ -36,6 +36,32 @@ const Roadmap = () => {
         </div>
         </div>
         
+      </div> */}
+      <div className=" text-slate-100 z-50 mx-5 px-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 py-20 rounded-xl" data-aos="fade-up">
+        <h1 className="font-bebas text-7xl mb-10">Roadmap.</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="roadmap-piece">
+            <h2 className="border-b-4 font-bebas text-5xl w-1/2 mb-5">01 First launch.</h2>
+            <p>Pushing P</p>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+            <p>Hit 100k community members before first launch.</p>
+          </div>
+          <div className="spacing"></div>
+          <div className="spacing"></div>
+          <div className="roadmap-piece">
+            <h2>02 // The clock&apos;s ticking.</h2>
+            </div>
+          <div className="roadmap-piece">
+            <h2>03 // We&apos;re in.</h2>
+          </div>
+          <div className="spacing"></div>
+          <div className="spacing"></div>
+          <div className="roadmap-piece">
+            <h2>04 // We&apos;re here to stay.</h2>
+          </div>
+        </div>
       </div>
     </>
   )

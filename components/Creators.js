@@ -1,63 +1,89 @@
 import React from 'react'
 import Image from 'next/image'
-
-import watch from "../assets/watch3.png"
+import watch from "../assets/rendered1.png"
 
 const Creators = () => {
   return (
-    <div className="px-10 md:px-20 lg:px-48 py-20 text-slate-100 z-50">
-    <h1 className="text-7xl font-bebas text-center" data-aos="fade-up">The team.</h1>
-    <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-      <div className="creator text-white" data-aos="fade-up">
-        <div className="w-64 h-64"><Image src={watch} layout="fill" objectFit="contain" quality={100} /></div>
-        <div className="relative">
-          <h3 className="text-2xl font-bebas">Jalla</h3>
-          <h4 className="text-lg font-poppins">Co-founder // Blockchain Developer</h4>
+    <div className=" py-20 mt-20 text-slate-100 flex flex-col items-center">
+      <h1 className="text-7xl font-bebas text-center mb-10" data-aos="fade-up">The team.</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/4">
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-64  relative">
+            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+          <div className="flex flex-row gap-4 justify-center items-center pt-2  px-10 ">
+              <h2 className="font-bebas">Jalla.</h2>
+              <span className="font-poppins text-xl">Blockchain Developer</span>
+          </div>
+          <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
+           
+        </div>
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-64  relative">
+            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+          <div className="flex flex-row gap-4 justify-center items-center pt-2 px-10 ">
+              <h2 className="font-bebas">Mars.</h2>
+              <span className="font-poppins text-xl">Marketing Lead</span>
+            </div>
+            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
+           
+        </div>
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-64  relative">
+            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+          <div className="flex flex-row gap-4 justify-center items-center pt-2 bg- rounded-b-2xl">
+              <h2 className="font-bebas">Tyler.</h2>
+              <span className="font-poppins text-xl">Community Lead</span>
+            </div>
+            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
+           
+        </div>
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-64  relative">
+            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+          <div className="flex flex-row gap-4 justify-center items-center pt-2 px-10 ">
+              <h2 className="font-bebas">Kev.</h2>
+              <span className="font-poppins text-xl">3D Head of Design</span>
+            </div>
+            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
+           
+        </div>
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-64  relative">
+            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+          <div className="flex flex-row gap-4 justify-center items-center pt-2 px-10">
+              <h2 className="font-bebas">Luke.</h2>
+              <span className="font-poppins text-xl">Animator</span>
+            </div>
+            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
+           
+        </div>
+        
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-64  relative">
+            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+          <div className="flex flex-row gap-4 justify-center items-center pt-2 bg- px-10 ">
+              <h2 className="font-bebas">Wessa.</h2>
+              <span className="font-poppins text-xl">Blockchain Developer</span>
+               </div>
+               <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
+           
+        </div>
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-64  relative">
+            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+          <div className="flex flex-row gap-4 justify-center items-center pt-2 bg- px-10 ">
+              <h2 className="font-bebas">Tom.</h2>
+              <span className="font-poppins text-xl">Sales</span>
+            </div>
         </div>
       </div>
-      <div className="creator text-white grow" data-aos="fade-up"  data-aos-delay="100">
-        <div className="w-64 h-64"><Image src={watch} layout="fill" objectFit="contain" quality={100} /></div>
-        <div className="relative">
-          <h3 className="text-2xl font-bebas">Mitta</h3>
-          <h4 className="text-lg font-poppins">Co-founder // Community Manager</h4>
-        </div>
-      </div>
-      <div className="creator text-white" data-aos="fade-up"  data-aos-delay="150">
-        <div className="w-64 h-64"><Image src={watch} layout="fill" objectFit="contain" quality={100} /></div>
-        <div className="relative">
-          <h3 className="text-2xl font-bebas">Cryptiano</h3>
-          <h4 className="text-lg font-poppins">Co-founder // Marketing Lead</h4>
-        </div>
-      </div>
-      <div className="creator text-white" data-aos="fade-up"  data-aos-delay="200">
-        <div className="w-64 h-64"><Image src={watch} layout="fill" objectFit="contain" quality={100} /></div>
-        <div className="relative">
-          <h3 className="text-2xl font-bebas">Kev</h3>
-          <h4 className="text-lg font-poppins">Designer</h4>
-        </div>
-      </div>
-      <div className="creator text-white" data-aos="fade-up"  data-aos-delay="250">
-        <div className="w-64 h-64"><Image src={watch} layout="fill" objectFit="contain" quality={100} /></div>
-        <div className="relative">
-          <h3 className="text-2xl font-bebas">Wessa</h3>
-          <h4 className="text-lg font-poppins">Blockchain Developer</h4>
-        </div>
-      </div>
-      <div className="creator text-white" data-aos="fade-up"  data-aos-delay="300">
-        <div className="w-64 h-64"><Image src={watch} layout="fill" objectFit="contain" quality={100} /></div>
-        <div className="relative">
-          <h3 className="text-2xl font-bebas">Woetroe</h3>
-          <h4 className="text-lg font-poppins">Animator // Marketing</h4>
-        </div>
-      </div>
-      <div className="creator text-white" data-aos="fade-up"  data-aos-delay="150">
-        <div className="w-64 h-64"><Image src={watch} layout="fill" objectFit="contain" quality={100} /></div>
-        <div className="relative">
-          <h3 className="text-2xl font-bebas">Tomski</h3>
-          <h4 className="text-lg font-poppins">Sales // Marketing</h4>
-        </div>
-      </div>
-    </div>
     </div>
   )
 }
