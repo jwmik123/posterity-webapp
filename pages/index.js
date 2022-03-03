@@ -23,7 +23,7 @@ export default function Home() {
         <Roadmap />
         <Creators />
       </main>
-      <footer className="bg-slate-400 flex flex-col gap-5 text-center justify-between items-center px-5 md:px-20 lg:px-44 py-5">
+      <footer className="bg-slate-400 flex flex-col md:flex-row gap-5 text-center md:text-left justify-between items-center px-5 md:px-20 lg:px-44 py-5">
       <div className={ "text-slate-900 font-bebas text-5xl py-2 px-4 rounded h-18"}>Posterity.</div>
         <div>
           <p className="text-xl">&copy; POSTERITY.</p>
