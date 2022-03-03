@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = () => {
   return (
-    <div className="h-[400px] mb-40">
+    <div className="h-[400px] mt-40 mb-20">
         <div className="absolute w-full mt-12 text-slate-200 text-center flex items-center flex-col z-10">
             <h1 className="text-9xl font-bebas">Join our community.</h1>
             <p className="text-xl font-poppins">Together we will create the #1 wearables brand in the Metaverse. <br/>Join our #Posterity community to keep up to date with the latest news, announcements and giveaways. </p>

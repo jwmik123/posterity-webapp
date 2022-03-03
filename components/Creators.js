@@ -1,89 +1,130 @@
 import React from 'react'
 import Image from 'next/image'
-import watch from "../public/images/rendered1.png"
+import watch from "../public/rendered1.png"
+import { FaTwitterSquare } from "react-icons/fa";
 
 const Creators = () => {
   return (
-    <div className=" py-20 mt-20 text-slate-100 flex flex-col items-center">
+    <div className="py-20 mt-20 text-slate-100 flex flex-col items-center">
       <h1 className="text-7xl font-bebas text-center mb-10" data-aos="fade-up">The team.</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/4">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-3/4">
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-64  relative">
-            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
-          </div>
-          <div className="flex flex-row gap-4 justify-center items-center pt-2  px-10 ">
-              <h2 className="font-bebas">Jalla.</h2>
-              <span className="font-poppins text-xl">Blockchain Developer</span>
-          </div>
-          <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
-           
-        </div>
-        <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-64  relative">
-            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
-          </div>
-          <div className="flex flex-row gap-4 justify-center items-center pt-2 px-10 ">
-              <h2 className="font-bebas">Mars.</h2>
-              <span className="font-poppins text-xl">Marketing Lead</span>
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+            <div className="absolute z-10 transition-all">
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Jalla.</h2>
+              <h5 className="font-poppins text-xl group-hover:hidden">Co-founder / Development</h5>
+              <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
+                vero quidem deleniti nam cupiditate.
+                <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
+              </p>      
             </div>
-            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
-           
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-64  relative">
-            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
-          </div>
-          <div className="flex flex-row gap-4 justify-center items-center pt-2 bg- rounded-b-2xl">
-              <h2 className="font-bebas">Tyler.</h2>
-              <span className="font-poppins text-xl">Community Lead</span>
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+            <div className="absolute z-10">
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Mitta.</h2>
+              <h5 className="font-poppins text-xl group-hover:hidden">Co-founder / Community Lead</h5>
+              <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
+                vero quidem deleniti nam cupiditate.
+                <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
+              </p>      
             </div>
-            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
-           
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-64  relative">
-            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
-          </div>
-          <div className="flex flex-row gap-4 justify-center items-center pt-2 px-10 ">
-              <h2 className="font-bebas">Kev.</h2>
-              <span className="font-poppins text-xl">3D Head of Design</span>
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+            <div className="absolute z-10">
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Marc.</h2>
+              <h5 className="font-poppins text-xl group-hover:hidden">Co-founder / Marketing Lead</h5>
+              <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
+                vero quidem deleniti nam cupiditate.
+                <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
+              </p>      
             </div>
-            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
-           
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-64  relative">
-            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
-          </div>
-          <div className="flex flex-row gap-4 justify-center items-center pt-2 px-10">
-              <h2 className="font-bebas">Luke.</h2>
-              <span className="font-poppins text-xl">Animator</span>
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+            <div className="absolute z-10">
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Kev.</h2>
+              <h5 className="font-poppins text-xl group-hover:hidden">Design Lead</h5>
+              <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
+                vero quidem deleniti nam cupiditate.
+                <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
+              </p>      
             </div>
-            <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
-           
-        </div>
-        
-        <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-64  relative">
-            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={watch} quality={100} />
           </div>
-          <div className="flex flex-row gap-4 justify-center items-center pt-2 bg- px-10 ">
-              <h2 className="font-bebas">Wessa.</h2>
-              <span className="font-poppins text-xl">Blockchain Developer</span>
-               </div>
-               <p className="text-lg font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, vero quidem deleniti nam cupiditate.</p>
-           
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-64  relative">
-            <Image className="rounded-3xl" layout="fill" objectFit="cover" src={watch} quality={100} />
-          </div>
-          <div className="flex flex-row gap-4 justify-center items-center pt-2 bg- px-10 ">
-              <h2 className="font-bebas">Tom.</h2>
-              <span className="font-poppins text-xl">Sales</span>
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+            <div className="absolute z-10">
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Wessa.</h2>
+              <h5 className="font-poppins text-xl group-hover:hidden">Blockchain Developer</h5>
+              <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
+                vero quidem deleniti nam cupiditate.
+                <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
+              </p>      
             </div>
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
         </div>
-      </div>
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+            <div className="absolute z-10">
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Luke.</h2>
+              <h5 className="font-poppins text-xl group-hover:hidden">Animation Lead / Marketing</h5>
+              <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
+                vero quidem deleniti nam cupiditate.
+                <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
+              </p>      
+            </div>
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+        </div>
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+            <div className="absolute z-10">
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Tom.</h2>
+              <h5 className="font-poppins text-xl group-hover:hidden">Sales Lead</h5>
+              <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
+                vero quidem deleniti nam cupiditate.
+                <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
+              </p>      
+            </div>
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+        </div>
+        <div className="creator flex justify-center flex-col items-center">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+            <div className="absolute z-10">
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Join us.</h2>
+              <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block"><br />
+                We are always looking for new people to join our team. Do you think you have what it takes? <a href="mailto:info@posteritywatches.io" className="text-slate-100 bg-rose-600 rounded px-2 py-1">Email us!</a>
+              </p>      
+            </div>
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={watch} quality={100} />
+          </div>
+        </div>
+      </div> 
     </div>
   )
 }
