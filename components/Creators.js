@@ -10,7 +10,7 @@ const Creators = () => {
       <h1 className="text-7xl font-bebas text-center mb-10" data-aos="fade-up">The team.</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-3/4">
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10 transition-all">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Jalla.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Co-founder / Development</h5>
@@ -25,9 +25,9 @@ const Creators = () => {
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
-              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Mitta.</h2>
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Mitta.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Co-founder / Community Lead</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -40,7 +40,7 @@ const Creators = () => {
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Marc.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Co-founder / Marketing Lead</h5>
@@ -55,7 +55,7 @@ const Creators = () => {
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Kev.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Design Lead</h5>
@@ -66,11 +66,11 @@ const Creators = () => {
                 <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
               </p>      
             </div>
-            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={`${teamUrl}QmcLW1CFHRosVJDTqimLgU3Kb3YzrCRX8ygJo1VZ6U2tHb`} quality={100} />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Wessa.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Blockchain Developer</h5>
@@ -85,7 +85,7 @@ const Creators = () => {
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Luke.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Animation Lead / Marketing</h5>
@@ -100,7 +100,7 @@ const Creators = () => {
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Tom.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Sales Lead</h5>
@@ -115,7 +115,7 @@ const Creators = () => {
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
-          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group">
+          <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left  px-5">Join us.</h2>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block"><br />

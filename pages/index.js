@@ -5,6 +5,9 @@ import Roadmap from "../components/Roadmap";
 import Creators from "../components/Creators";
 import Banner from "../components/Banner";
 
+import { FaTwitter, FaDiscord } from "react-icons/fa";
+import {AiFillInstagram} from "react-icons/ai";
+
 export default function Home() {
   return (
       <>
@@ -20,14 +23,19 @@ export default function Home() {
         <Roadmap />
         <Creators />
       </main>
-      <footer className="bg-rose-600 flex justify-between items-center px-5 md:px-20 lg:px-48 py-5">
-      <div className={ "bg-rose-600 text-slate-900 font-bebas text-5xl py-2 px-4 rounded h-18"}>Posterity.</div>
+      <footer className="bg-slate-400 flex flex-col gap-5 text-center justify-between items-center px-5 md:px-20 lg:px-44 py-5">
+      <div className={ "text-slate-900 font-bebas text-5xl py-2 px-4 rounded h-18"}>Posterity.</div>
         <div>
-          <p className="text-2xl">&copy; Posterity.</p>
+          <p className="text-xl">&copy; POSTERITY.</p>
         </div>
-        <div>
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
+        <div className="text-lg flex flex-col">
+          <a href='#'>Terms of Service</a>
+          <a href='#'>Privacy Policy</a>
+        </div>
+        <div className="flex flex-row gap-4">
+          <button className="bg-slate-900 text-slate-100 p-2 rounded-xl"><FaTwitter className="w-6 h-6"/></button>
+          <button className="bg-slate-900 text-slate-100 p-2 rounded-xl"><FaDiscord className="w-6 h-6"/></button>
+          <button className="bg-slate-900 text-slate-100 p-2 rounded-xl"><AiFillInstagram className="w-6 h-6"/></button>
         </div>
       </footer>
     </>
