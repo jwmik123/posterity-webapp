@@ -33,7 +33,7 @@ export default function Model(props) {
       // Converting current time to 360 degree scale
       let hr_rotation = -(30 * hours + minutes / 2); 
       let min_rotation = -(6 * minutes);
-      let sec_rotation = (6 * seconds);
+      let sec_rotation = (6 * seconds) + 180;
 
       let radianHr = degrees_to_radians(hr_rotation);
       let radianMin = degrees_to_radians(min_rotation);
@@ -50,7 +50,7 @@ export default function Model(props) {
 
   useFrame(({clock}) => {
     const a = clock.getElapsedTime();
-    group.current.rotation.x = (-Math.PI / 1.75 + Math.cos(a / 4) / 8) + 185;
+    group.current.rotation.x = Math.PI / 1.75 + Math.cos(a / 4) / 8;
     group.current.rotation.y = Math.sin(a / 4) / 8;
     group.current.rotation.z = (1 + Math.sin(a / 1.5)) / 20;
     group.current.position.y = (1 + Math.sin(a / 1.5)) / 10;

@@ -1,15 +1,18 @@
 import React from 'react'
 
+import { FaTwitter, FaDiscord } from "react-icons/fa";
+import {AiFillInstagram} from "react-icons/ai";
+
 const Banner = () => {
   return (
-    <div className="h-[400px] mt-40 mb-40 md:mb-20">
+    <div className="h-[400px] mt-20 mb-40">
         <div className="absolute w-full mt-12 text-slate-200 text-center flex items-center flex-col z-10">
-            <h1 className="text-9xl font-bebas">Join our community.</h1>
-            <p className="text-xl font-poppins">Together we will create the #1 wearables brand in the Metaverse. <br/>Join our #Posterity community to keep up to date with the latest news, announcements and giveaways. </p>
+            <h1 className="text-9xl font-bebas" data-aos="fade-up">Join our community.</h1>
+            <p className="text-xl font-poppins" data-aos="fade-up" data-aos-delay="50">Together we will create the #1 wearables brand in the Metaverse. <br/>Join our #Posterity community to keep up to date with the latest news, announcements and giveaways. </p>
             <div className=" flex mt-10 gap-10">
-            <button className="banner-button">Discord</button>
-            <button className="banner-button">Twitter</button>
-            <button className="banner-button">Instagram</button>
+            <button className="banner-button" data-aos="fade-up" data-aos-delay="100"><FaDiscord className="w-8 h-8 bg-slate-900 text-slate-100 p-2 rounded-lg" /> Discord</button>
+            <button className="banner-button" data-aos="fade-up" data-aos-delay="150"><FaTwitter className="w-8 h-8 bg-slate-900 text-slate-100 p-2 rounded-lg" /> Twitter</button>
+            <button className="banner-button" data-aos="fade-up" data-aos-delay="200"><AiFillInstagram className="w-8 h-8 bg-slate-900 text-slate-100 p-2 rounded-lg" /> Instagram</button>
         </div>
         </div>
         <div className="svg text-center w-full relative flex justify-center my-10">

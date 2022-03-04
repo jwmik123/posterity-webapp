@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import {Image} from 'next/image';
 import { FaTwitter, FaDiscord } from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
-import OpenSea from "../assets/opensea.svg";
 
 function Header() {
 

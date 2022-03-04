@@ -70,7 +70,7 @@ h4 {
   }
 
   .banner-button {
-    @apply bg-slate-200 text-slate-900 px-5 py-2 rounded-md text-lg hover:scale-105 transition
+    @apply bg-slate-200 text-slate-900 px-5 py-2 flex flex-row items-center gap-2 rounded-md text-lg hover:scale-105 transition
   }
 
   .roadmap-piece {

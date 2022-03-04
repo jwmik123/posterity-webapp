@@ -1,6 +1,6 @@
-import React, {Suspense, useState, useEffect} from 'react'
+import React, { Suspense } from 'react'
 import { Canvas } from "@react-three/fiber";
-import {Environment, OrbitControls} from "@react-three/drei";
+import { Environment, OrbitControls } from "@react-three/drei";
 import Loader from "./Loader";
 import Object from "./object";
 
@@ -17,13 +17,13 @@ function LandingPage() {
       <div className={`relative md:absolute h-full w-1/2 right-0`}>
         <Canvas>
           <Suspense fallback={<Loader />}>
-            <Object/>
+            <Object />
             <OrbitControls enableZoom={false} />
             <Environment
-            background={false}
-            path="/"
-            scene={undefined}
-            preset="sunset" />
+              background={false}
+              path="/"
+              scene={undefined}
+              preset="sunset" />
           </Suspense>
         </Canvas>
       </div>
