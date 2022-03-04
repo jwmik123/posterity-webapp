@@ -14,7 +14,7 @@ function LandingPage() {
           <h2 className="text-xl text-slate-100">Connect wallet</h2>
         </div>
       </div>
-      <div className={`absolute h-full w-1/2 right-0`}>
+      <div className={`relative md:absolute h-full w-1/2 right-0`}>
         <Canvas>
           <Suspense fallback={<Loader />}>
             <Object/>

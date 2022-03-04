@@ -51,7 +51,7 @@ const Creators = () => {
                 <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
               </p>      
             </div>
-            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
@@ -66,7 +66,7 @@ const Creators = () => {
                 <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
               </p>      
             </div>
-            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={`${teamUrl}QmcLW1CFHRosVJDTqimLgU3Kb3YzrCRX8ygJo1VZ6U2tHb`} quality={100} />
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={`${teamUrl}QmcLW1CFHRosVJDTqimLgU3Kb3YzrCRX8ygJo1VZ6U2tHb`} quality={100} />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
@@ -81,7 +81,7 @@ const Creators = () => {
                 <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
               </p>      
             </div>
-            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
@@ -111,7 +111,7 @@ const Creators = () => {
                 <FaTwitterSquare className="w-8 h-8 text-blue-400 cursor-pointer" />
               </p>      
             </div>
-            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center">
@@ -122,7 +122,7 @@ const Creators = () => {
                 We are always looking for new people to join our team. Do you think you have what it takes? <a href="mailto:info@posteritywatches.io" className="text-slate-100 bg-rose-600 rounded px-2 py-1">Email us!</a>
               </p>      
             </div>
-            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={`${teamUrl}QmZyjU8RcX3EM7DVZH65ogk5BF2wqHCWVw67XwYwcdawnU`} quality={100} />
           </div>
         </div>
       </div> 
