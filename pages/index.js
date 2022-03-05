@@ -20,13 +20,13 @@ export default function Home() {
         <Header />
         <LandingPage />
         <Banner />
-        <Roadmap />
+        <Roadmap id="roadmap" />
         <Creators />
       </main>
-      <footer className="bg-slate-400 flex flex-col md:flex-row gap-5 text-center md:text-left justify-between items-center px-5 md:px-20 lg:px-44 py-5">
-      <div className={ "text-slate-900 font-bebas text-5xl py-2 px-4 rounded h-18"}>Posterity.</div>
+      <footer className="bg-slate-500 flex flex-col md:flex-row gap-5 text-center md:text-left justify-between items-center px-5 md:px-20 lg:px-44 py-5">
+        <div className={ "text-slate-900 font-bebas text-5xl py-2 px-4 rounded h-18"}>Posterity.</div>
         <div>
-          <p className="text-xl">&copy; POSTERITY.</p>
+          <p className="text-xl">&copy;2022 POSTERITY.</p>
         </div>
         <div className="text-lg flex flex-col">
           <a href='#'>Terms of Service</a>
