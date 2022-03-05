@@ -22,7 +22,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}2.png`} quality={100} />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}2.png`} quality={100} alt="tyler"/>
           </div>
         </div>
 
@@ -36,9 +36,9 @@ const Creators = () => {
                 Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
                 vero quidem deleniti nam cupiditate.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
+              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Marc</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}1.png`} quality={100} />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}1.png`} quality={100} alt="marc" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -51,9 +51,9 @@ const Creators = () => {
                 Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
                 vero quidem deleniti nam cupiditate.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
+              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Jalla</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}3.png`} quality={100} />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}3.png`} quality={100} alt="jalla" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -66,9 +66,9 @@ const Creators = () => {
                 Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
                 vero quidem deleniti nam cupiditate.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
+              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Wessa</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}4.png`} quality={100} />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}4.png`} quality={100} alt="wessa" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -81,9 +81,9 @@ const Creators = () => {
                 Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
                 vero quidem deleniti nam cupiditate.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
+              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Kev</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}5.png`} quality={100} />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}5.png`} quality={100} alt="kev" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -96,9 +96,9 @@ const Creators = () => {
                 Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
                 vero quidem deleniti nam cupiditate.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
+              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@LukeLuke</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}6.png`} quality={100} />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}6.png`} quality={100} alt="Luke" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -111,9 +111,9 @@ const Creators = () => {
                 Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
                 vero quidem deleniti nam cupiditate.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
+              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tom</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}7.png`} quality={100} />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}7.png`} quality={100} alt="Tom" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -128,7 +128,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}10.png`} quality={100} />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}10.png`} quality={100} alt="joinus" />
           </div>
         </div>
       </div> 
