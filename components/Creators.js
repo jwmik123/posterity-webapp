@@ -1,12 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
+
 import watch from "../public/images/posterity_3.png";
+import watch1 from "../public/images/posterity_4.png";
+import watch2 from "../public/images/posterity_6.png";
+import watch3 from "../public/images/posterity_8.png";
+import watch4 from "../public/images/posterity_9.png";
+import watch5 from "../public/images/posterity_10.png";
+import watch6 from "../public/images/posterity_11.png";
+
 import { FaTwitter } from "react-icons/fa";
 
 const Creators = () => {
-
-  const teamUrl = '/ipfs/bafybeigstlzsx2suta33xpoakdepdeg6ya2d5jblcxaypo45odaetasuuy/posterity1920_';
-  
+  // const teamUrl = '/ipfs/bafybeigstlzsx2suta33xpoakdepdeg6ya2d5jblcxaypo45odaetasuuy/posterity1920_';
   return (
     <div className="py-20 mt-20 text-slate-100 flex flex-col items-center">
       <h1 className="text-7xl font-bebas text-center mb-10" data-aos="fade-up">The team.</h1>
@@ -40,7 +46,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Marc</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}1.png`} quality={100} alt="marc" />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={watch1} quality={100} alt="marc" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -55,7 +61,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Jalla</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}3.png`} quality={100} alt="jalla" />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={watch2} quality={100} alt="jalla" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -70,7 +76,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Wessa</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}4.png`} quality={100} alt="wessa" />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={watch3} quality={100} alt="wessa" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -85,7 +91,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Kev</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}5.png`} quality={100} alt="kev" />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={watch4} quality={100} alt="kev" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -100,7 +106,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@LukeLuke</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}6.png`} quality={100} alt="Luke" />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={watch5} quality={100} alt="Luke" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -115,7 +121,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tom</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}7.png`} quality={100} alt="Tom" />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={watch6} quality={100} alt="Tom" />
           </div>
         </div>
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
@@ -130,7 +136,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}10.png`} quality={100} alt="joinus" />
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={watch} quality={100} alt="joinus" />
           </div>
         </div>
       </div> 
