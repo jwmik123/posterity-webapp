@@ -1,10 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import watch from "../public/rendered1.png"
+import watch from "../public/images/posterity_3.png";
 import { FaTwitter } from "react-icons/fa";
 
 const Creators = () => {
-  const teamUrl = 'https://posterity.mypinata.cloud/ipfs/bafybeigstlzsx2suta33xpoakdepdeg6ya2d5jblcxaypo45odaetasuuy/posterity1920_';
+
+  const teamUrl = '/ipfs/bafybeigstlzsx2suta33xpoakdepdeg6ya2d5jblcxaypo45odaetasuuy/posterity1920_';
+  
   return (
     <div className="py-20 mt-20 text-slate-100 flex flex-col items-center">
       <h1 className="text-7xl font-bebas text-center mb-10" data-aos="fade-up">The team.</h1>
@@ -22,7 +24,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={`${teamUrl}2.png`} quality={100} alt="tyler"/>
+            <Image className="rounded-3xl opacity-75 group-hover:opacity-50" layout="fill" objectFit="cover" priority src={watch} quality={100} alt="tyler"/>
           </div>
         </div>
 
