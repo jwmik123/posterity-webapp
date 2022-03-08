@@ -2,6 +2,7 @@ import React from 'react'
 
 const Roadmap = () => {
   return (
+
     <>
       <div className="bg-slate-500 text-slate-100 z-50 mx-5 px-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 py-20 rounded-xl" data-aos="fade-up">
         <h1 className="font-bebas text-slate-300 text-7xl mb-10">Roadmap.</h1>
