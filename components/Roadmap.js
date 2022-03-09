@@ -2,35 +2,35 @@ import React, {useEffect, useState} from 'react'
 
 const Roadmap = () => {
   const [click, setClick] = useState(false);
-  useEffect(() => {
-    document.addEventListener("click", () => {
-      setClick(true);
-    })
-  })
+  const [click1, setClick1] = useState(false);
+  const [click2, setClick2] = useState(false);
+  const [click3, setClick3] = useState(false);
+  const [click4, setClick4] = useState(false);
+
 
   return (
-    <div className="mx-5 px-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 py-20">
-      <div className="grid grid-cols-3 grid-flow-row gap-4 h-[600px] relative">
-        <div className={!click ? "bg-slate-400 relative flex p-5 rounded cursor-pointer w-full h-full"
-        : "bg-red-500 flex p-5 rounded cursor-pointer w-full h-full absolute z-50 transition-all duration-300"}>
-          <h1 className="font-bebas text-9xl absolute -left-10 text-slate-100 -top-10">01</h1>
-          <h2 className="self-end">First Launch.</h2>
+    <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 py-20">
+      <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 h-[600px] relative">
+        <div className={!click ? "bg-slate-400 relative flex flex-col p-5 rounded cursor-pointer w-full h-full"
+        : "bg-red-500 flex p-5 rounded cursor-pointer w-full h-full absolute z-50 transition-all duration-300"} onClick={() => setClick(true)}>
+          <h1 className="font-bebas text-9xl text-slate-100">01</h1>
+          <h2 className="">First Launch.</h2>
         </div>
-        <div className="bg-slate-400 relative flex p-5 rounded">
-          <h1 className="font-bebas text-9xl absolute -left-10 text-slate-100 -top-10">02</h1>
-          <h2 className="self-end">First Launch.</h2>
+        <div className="bg-slate-400 relative flex p-5 rounded flex-col">
+          <h1 className="font-bebas text-9xl text-slate-100">02</h1>
+          <h2 className="">The clock's ticking.</h2>
         </div>
-        <div className="row-span-2 bg-slate-400 relative flex p-5 rounded">
-          <h1 className="font-bebas text-9xl absolute -left-10 text-slate-100 -top-10">04</h1>
-          <h2 className="self-end">First Launch.</h2>
+        <div className="lg:row-span-2 bg-slate-400 relative flex p-5 rounded flex-col">
+          <h1 className="font-bebas text-9xl text-slate-100">04</h1>
+          <h2 className="">We're in.</h2>
         </div>
-        <div className="col-span-2 row-span-2 bg-slate-400 relative flex p-5 rounded">
-          <h1 className="font-bebas text-9xl absolute -left-10 text-slate-100 -top-10">03</h1>
-          <h2 className="self-end">First Launch.</h2>
+        <div className="lg:col-span-2 lg:row-span-2 bg-slate-400 relative flex p-5 rounded flex-col">
+          <h1 className="font-bebas text-9xl text-slate-100">03</h1>
+          <h2 className="">We're here to stay.</h2>
         </div>
-         <div className="bg-slate-400 relative flex p-5 rounded">
-          <h1 className="font-bebas text-9xl absolute -left-10 text-slate-100 -top-10">05</h1>
-          <h2 className="self-end">First Launch.</h2>
+         <div className="bg-slate-400 relative flex p-5 rounded flex-col">
+          <h1 className="font-bebas text-9xl text-slate-100">05</h1>
+          <h2 className="">Contact us.</h2>
         </div>
         {/*
         <div className="bg-slate-400">
