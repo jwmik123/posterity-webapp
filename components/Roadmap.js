@@ -18,15 +18,15 @@ const Roadmap = () => {
         </div>
         <div className="bg-slate-400 relative flex p-5 rounded flex-col">
           <h1 className="font-bebas text-9xl text-slate-100">02</h1>
-          <h2 className="">The clock's ticking.</h2>
+          <h2 className="">The clock&apos;s ticking.</h2>
         </div>
         <div className="lg:row-span-2 bg-slate-400 relative flex p-5 rounded flex-col">
           <h1 className="font-bebas text-9xl text-slate-100">04</h1>
-          <h2 className="">We're in.</h2>
+          <h2 className="">We&apos;re in.</h2>
         </div>
         <div className="lg:col-span-2 lg:row-span-2 bg-slate-400 relative flex p-5 rounded flex-col">
           <h1 className="font-bebas text-9xl text-slate-100">03</h1>
-          <h2 className="">We're here to stay.</h2>
+          <h2 className="">We&apos;re here to stay.</h2>
         </div>
          <div className="bg-slate-400 relative flex p-5 rounded flex-col">
           <h1 className="font-bebas text-9xl text-slate-100">05</h1>
