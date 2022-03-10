@@ -10,7 +10,7 @@ import {AiFillInstagram} from "react-icons/ai";
 
 export default function Home() {
   return (
-      <html className="dark">
+   <>
       <Head>
         <title>Posterity</title>
         <meta name="description" content="A metaverse luxury brand" />
@@ -38,5 +38,5 @@ export default function Home() {
           <button className="bg-slate-900 text-slate-100 p-2 rounded-xl hover:scale-110 duration-100"><AiFillInstagram className="w-6 h-6"/></button>
         </div>
       </footer>
-    </html>
+      </>
   )}
