@@ -16,7 +16,7 @@ const Roadmap = () => {
     <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 pb-40 md:pb-20 lg:pb-0">
       <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 h-[600px] relative transition-transform duration-300">
         <div className={!click ? "bg-slate-700 relative flex flex-col p-5 rounded"
-        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-left" data-aos-duration="1000" >
+        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-up" data-aos-duration="1000" >
           {!click ? (
             <>
               <Image src={watch2} layout="fill" objectFit="cover" className="opacity-60 rounded" />
@@ -34,7 +34,7 @@ const Roadmap = () => {
           )}
         </div>
         <div className={!click1 ? "bg-slate-500 relative flex flex-col p-5 rounded"
-        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-left" data-aos-duration="1000" data-aos-delay="50">
+        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50">
           {!click1 ? (
             <div className="grid cursor-pointer h-full" onClick={() => setClick1(true)}>
               <h1 className="font-bebas text-9xl text-slate-100">02</h1>
@@ -48,7 +48,7 @@ const Roadmap = () => {
           )}
         </div>
         <div className={!click2 ? "bg-slate-500 relative flex flex-col p-5 rounded lg:row-span-2"
-        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-left" data-aos-duration="1000"  data-aos-delay="100">
+        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="100">
           {!click2 ? (
             <div className="grid cursor-pointer h-full" onClick={() => setClick2(true)}>
               <h1 className="font-bebas text-9xl text-slate-100">03</h1>
@@ -62,7 +62,7 @@ const Roadmap = () => {
           )}
         </div>
         <div className={!click3 ? "bg-slate-500 relative flex flex-col lg:col-span-2 lg:row-span-2 p-5 rounded"
-        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-left" data-aos-duration="1000"  data-aos-delay="150">
+        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="150">
           {!click3 ? (
             <div className="grid cursor-pointer h-full" onClick={() => setClick3(true)}>
               <h1 className="font-bebas text-9xl text-slate-100">04</h1>
@@ -76,7 +76,7 @@ const Roadmap = () => {
           )}
         </div>
         <div className={!click4 ? "bg-slate-500 relative flex flex-col p-5 rounded"
-        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-left" data-aos-duration="1000"  data-aos-delay="200">
+        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="200">
           {!click4 ? (
             <div className="grid cursor-pointer h-full" onClick={() => setClick4(true)}>
               <h1 className="font-bebas text-9xl text-slate-100">05</h1>
