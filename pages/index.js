@@ -4,13 +4,14 @@ import LandingPage from "../components/LandingPage";
 import Roadmap from "../components/Roadmap";
 import Creators from "../components/Creators";
 import Banner from "../components/Banner";
+import Faq from "../components/FaqPage";
 
 import { FaTwitter, FaDiscord } from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
 
 export default function Home() {
   return (
-   <>
+   <div className="bg-slate-900">
       <Head>
         <title>Posterity</title>
         <meta name="description" content="A metaverse luxury brand" />
@@ -22,6 +23,7 @@ export default function Home() {
         <Banner />
         <Roadmap id="roadmap" />
         <Creators />
+        <Faq />
       </main>
       <footer className="bg-black flex flex-col md:flex-row gap-5 text-center md:text-left justify-between items-center px-5 md:px-20 lg:px-44 py-5">
         <div className={ "text-slate-100 font-bebas text-5xl py-2 px-4 rounded h-18"}>Posterity.</div>
@@ -30,7 +32,6 @@ export default function Home() {
         </div>
         <div className="text-lg text-slate-100 flex flex-col">
           <a href='#'>Terms of Service</a>
-          <a href='#'>Privacy Policy</a>
         </div>
         <div className="flex flex-row gap-4">
           <button className="bg-slate-700 text-slate-100 p-2 rounded-xl hover:scale-110 duration-100"><FaTwitter className="w-6 h-6"/></button>
@@ -38,5 +39,5 @@ export default function Home() {
           <button className="bg-slate-700 text-slate-100 p-2 rounded-xl hover:scale-110 duration-100"><AiFillInstagram className="w-6 h-6"/></button>
         </div>
       </footer>
-      </>
+      </div>
   )}
