@@ -33,7 +33,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="50">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Marc.</h2>
@@ -49,7 +49,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="100">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Jalla.</h2>
@@ -65,7 +65,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="50">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Wessa.</h2>
@@ -81,7 +81,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="100">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Kev.</h2>
@@ -97,7 +97,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="150">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Luke.</h2>
@@ -113,7 +113,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="50">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Tom.</h2>
@@ -129,7 +129,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="350">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Join us.</h2>
