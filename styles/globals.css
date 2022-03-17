@@ -82,4 +82,8 @@ h4 {
   .spacing {
     @apply hidden md:block;
   }
+
+  .faq-row {
+    outline: none !important;
+  }
 }

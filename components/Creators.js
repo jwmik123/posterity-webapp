@@ -103,9 +103,7 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Luke.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">3D Motion Design</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
+                A wild fella stranded in the motion designer world. Sounds like the beginning of a bad joke right? Just wait until you see my crypto investments.
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@LukeLuke</p></button> 
             </div>
@@ -119,9 +117,7 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Tom.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Sales</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
+                I'm not the best looking guy, but I know how to convince anybody to buy my shit.
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tom</p></button> 
             </div>
