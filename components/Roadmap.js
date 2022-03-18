@@ -16,7 +16,7 @@ const Roadmap = () => {
     <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 pb-40 md:pb-20 lg:pb-0">
       <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 h-[600px] relative transition-transform duration-300">
         <div className={!click ? "bg-slate-700 relative flex flex-col p-5 rounded"
-        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-up" data-aos-duration="1000" >
+        : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-up" data-aos-duration="1000">
           {!click ? (
             <>
               <Image src={watch2} layout="fill" objectFit="cover" className="opacity-60 rounded" />
@@ -33,6 +33,7 @@ const Roadmap = () => {
             </div>  
           )}
         </div>
+
         <div className={!click1 ? "bg-slate-500 relative flex flex-col p-5 rounded"
         : "bg-slate-400 flex p-5 rounded w-full h-full absolute z-50"} data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50">
           {!click1 ? (

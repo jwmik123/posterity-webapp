@@ -5,9 +5,9 @@ import watch from "../public/images/posterity_3.png";
 import watch1 from "../public/images/posterity_4.png";
 import watch2 from "../public/images/posterity_6.png";
 import watch3 from "../public/images/posterity_8.png";
-import watch4 from "../public/images/posterity_9.png";
+import watch4 from "../public/images/posterity_7.png";
 import watch5 from "../public/images/posterity_10.png";
-import watch6 from "../public/images/posterity_11.png";
+import watch6 from "../public/images/posterity.png";
 
 import { FaTwitter } from "react-icons/fa";
 
@@ -45,7 +45,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Marc</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch1} quality={100} alt="marc" />
+            <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch4} quality={100} alt="marc" />
           </div>
         </div>
 
@@ -61,7 +61,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Jalla</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch2} quality={100} alt="jalla" />
+            <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch6} quality={100} alt="jalla" />
           </div>
         </div>
 
@@ -93,7 +93,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Kev</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch4} quality={100} alt="kev" />
+            <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch1} quality={100} alt="kev" />
           </div>
         </div>
 
@@ -125,7 +125,7 @@ const Creators = () => {
               </p>     
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tom</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch6} quality={100} alt="Tom" />
+            <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch} quality={100} alt="Tom" />
           </div>
         </div>
 
@@ -138,7 +138,7 @@ const Creators = () => {
               </p> 
               <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2 bg-rose-700 p-2 rounded"><p>Apply Now</p></button> 
             </div>
-            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={watch} quality={100} alt="joinus" />
+            <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={watch2} quality={100} alt="joinus" />
           </div>
         </div>
       </div> 
