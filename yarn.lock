@@ -3642,6 +3642,11 @@ all-node-versions@^8.0.0:
     semver "^7.3.2"
     write-file-atomic "^3.0.3"
 
+animated-scroll-to@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/animated-scroll-to/-/animated-scroll-to-2.2.0.tgz#0aea20d4d800e3e8bfd1504041091276f9593360"
+  integrity sha512-VVhwrii9tMXwP1GlQacLplUrh/0x2IbU/JxTUMBvzam6lJpJ9jMCw8PKHOvqMJ52vYmBDfcf9lNDuSeoWCD/mw==
+
 ansi-align@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/ansi-align/-/ansi-align-3.0.1.tgz#0cdf12e111ace773a86e9a1fad1225c43cb19a59"

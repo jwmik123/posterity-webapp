@@ -3,6 +3,8 @@ import { FaTwitter, FaDiscord } from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
 import Link from 'next/link'
 
+import animateScrollTo from 'animated-scroll-to';
+
 function Header() {
 
   const [colorChange, setColorChange] = useState(false);
@@ -35,7 +37,7 @@ function Header() {
         <Link href="/">
           <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
         </Link>
-        <li className="nav-item" data-aos="fade-in" data-aos-delay="200">Roadmap</li>
+        <li className="nav-item" data-aos="fade-in" data-aos-delay="200" onClick={() => animateScrollTo(document.querySelector('.roadmap'))}>Roadmap</li>
         <Link href="/gallery">
           <li className="nav-item text-slate-500 line-through cursor-default" data-aos="fade-in" data-aos-delay="300">Gallery</li>
         </Link>
