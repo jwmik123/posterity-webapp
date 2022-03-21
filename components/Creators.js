@@ -104,7 +104,7 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Tom.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Sales</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                I'm certainly not the best looking person. But I do know how to sell you a pen.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos modi voluptatibus esse voluptates totam fugit explicabo dolorum ut beatae repellat illum iusto nisi quae nesciunt voluptate labore, laborum hic.
               </p>     
               
             </div>
