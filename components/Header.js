@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { FaTwitter, FaDiscord } from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
+import Link from 'next/link'
 
 function Header() {
 
@@ -29,12 +30,18 @@ function Header() {
         colorChange ? "bg-rose-600 text-slate-100 font-bebas text-2xl py-1 px-2 rounded h-18"
         : "bg-rose-600 text-slate-100 font-bebas text-3xl pt-2 pb-1 px-4 rounded h-18"
       }
-       >Posterity.</div>
+      >Posterity.</div>
       <ul className="hidden lg:flex gap-10 items-center font-poppins text-slate-100">
+        <Link href="/">
           <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
-          <li className="nav-item" data-aos="fade-in" data-aos-delay="200">Roadmap</li>
+        </Link>
+        <li className="nav-item" data-aos="fade-in" data-aos-delay="200">Roadmap</li>
+        <Link href="/gallery">
           <li className="nav-item text-slate-500 line-through cursor-default" data-aos="fade-in" data-aos-delay="300">Gallery</li>
-          {/* <li className="nav-item" data-aos="fade-in" data-aos-delay="400">Mint NFT</li> */}
+        </Link>
+        {/* <Link href="/mint">
+          <li className="nav-item" data-aos="fade-in" data-aos-delay="400">Mint NFT</li>
+        </Link> */}
         <ul className="flex divide-x divide-slate-100 items-center">
           <li className="socials" data-aos="fade-in" data-aos-delay="600"><a href="https://discord.gg/puSCbueBbq" target="_blank"><FaDiscord className="text-xl mx-5"/></a></li>
           <li className="socials" data-aos="fade-in" data-aos-delay="700"><a href="https://twitter.com/PosterityNFT" target="_blank"><FaTwitter className="text-xl mx-5"/></a></li>
@@ -49,8 +56,7 @@ function Header() {
         </ul>
       </ul>
     </nav>
-    </div>
-   
+  </div>
   )
 }
 
