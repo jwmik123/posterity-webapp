@@ -22,9 +22,7 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Tyler.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Co-founder <br /> Community Lead</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
+                Also known as the guy who loves to help and bring people together. But don't mistake his kindness for weakness, he will ban you if you act like a shitbag!
               </p>     
               
             </div>
@@ -35,7 +33,7 @@ const Creators = () => {
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
-              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Marc.</h2>
+              <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Mars.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Co-founder <br/> Marketing Lead</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
               A marketing and psychology enthusiast, who tries to understand people to the point where computers are his preferred company.
@@ -65,9 +63,7 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Wessa.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Blockchain Developer</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
+                A programmer as long as he can remember. He only makes code in the dark because light attracts bugs, and he hate all types of bugs.
               </p>     
               
             </div>
@@ -108,7 +104,7 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Tom.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Sales</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                I'm certainly not the best looking person. But I do know how to sell you a pen.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos modi voluptatibus esse voluptates totam fugit explicabo dolorum ut beatae repellat illum iusto nisi quae nesciunt voluptate labore, laborum hic.
               </p>     
               
             </div>
