@@ -49,16 +49,17 @@ a {
   box-sizing: border-box;
 }
 
-h2 {
-  @apply text-4xl font-poppins;
-}
-h4 {
+
+/* h4 {
   @apply text-xl font-poppins;
-}
+} */
 
 @layer components {
+  h2 {
+    @apply text-4xl font-poppins;
+  }
   .nav-item {
-    @apply cursor-pointer active:border-b-2 border-b-slate-100;
+    @apply cursor-pointer;
   }
 
   .socials {
