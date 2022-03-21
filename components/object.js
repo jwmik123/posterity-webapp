@@ -19,15 +19,11 @@ export default function Model(props) {
   const [secondHand, setSecondHand] = useState(0);
 
   useEffect(() => {
+    // Get the current date.
     const date = new Date();
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
-
-    function degrees_to_radians(degrees) {
-      const pi = Math.PI;
-      return degrees * (pi/180);
-    }
 
     const interval = setInterval(() => {
       // Converting current time to 360 degree scale
@@ -39,10 +35,17 @@ export default function Model(props) {
       let radianMin = degrees_to_radians(min_rotation);
       let radianSec = degrees_to_radians(sec_rotation);
 
+      //Set the state for each hand.
       setSmallHand(radianHr);
       setBigHand(radianMin);
       setSecondHand(radianSec);
     }, 1000)
+
+    // Converting the degree scale to the radian scale.
+    function degrees_to_radians(degrees) {
+      const pi = Math.PI;
+      return degrees * (pi/180);
+    }
 
     // We have to clear the interval in order for the hands to update correctly
     return () => clearInterval(interval);
@@ -57,7 +60,7 @@ export default function Model(props) {
   })
   return (
     // THE REAL DEAL!
-    <group scale={45} ref={group} {...props} dispose={null}>
+    <group scale={35} ref={group} {...props} dispose={null}>
       <mesh
         castShadow
         receiveShadow

@@ -33,12 +33,12 @@ function Header() {
       <ul className="hidden lg:flex gap-10 items-center font-poppins text-slate-100">
           <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
           <li className="nav-item" data-aos="fade-in" data-aos-delay="200">Roadmap</li>
-          <li className="nav-item" data-aos="fade-in" data-aos-delay="300">Gallery</li>
-          <li className="nav-item" data-aos="fade-in" data-aos-delay="400">Mint NFT</li>
+          <li className="nav-item text-slate-500 line-through cursor-default" data-aos="fade-in" data-aos-delay="300">Gallery</li>
+          {/* <li className="nav-item" data-aos="fade-in" data-aos-delay="400">Mint NFT</li> */}
         <ul className="flex divide-x divide-slate-100 items-center">
-          <li className="socials" data-aos="fade-in" data-aos-delay="500"><AiFillInstagram className="text-xl mx-5"/></li>
-          <li className="socials" data-aos="fade-in" data-aos-delay="600"><FaDiscord className="text-xl mx-5"/></li>
-          <li className="socials" data-aos="fade-in" data-aos-delay="700"><FaTwitter className="text-xl mx-5"/></li>
+          <li className="socials" data-aos="fade-in" data-aos-delay="600"><a href="https://discord.gg/puSCbueBbq" target="_blank"><FaDiscord className="text-xl mx-5"/></a></li>
+          <li className="socials" data-aos="fade-in" data-aos-delay="700"><a href="https://twitter.com/PosterityNFT" target="_blank"><FaTwitter className="text-xl mx-5"/></a></li>
+          <li className="socials" data-aos="fade-in" data-aos-delay="500"><a href="https://www.instagram.com/posteritywatches/" target="_blank"><AiFillInstagram className="text-xl mx-5"/></a></li>
           <li className="socials px-5"  data-aos="fade-in" data-aos-delay="800">
           <svg width="20" height="20" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M90 45C90 69.8514 69.8514 90 45 90C20.1486 90 0 69.8514 0 45C0 20.1486 20.1486 0 45 0C69.8566 0 90 20.1486 90 45Z" fill="white"/>

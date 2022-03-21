@@ -9,7 +9,6 @@ import watch4 from "../public/images/posterity_7.png";
 import watch5 from "../public/images/posterity_10.png";
 import watch6 from "../public/images/posterity.png";
 
-import { FaTwitter } from "react-icons/fa";
 
 const Creators = () => {
   return (
@@ -27,7 +26,7 @@ const Creators = () => {
                 Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
                 vero quidem deleniti nam cupiditate.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tyler</p></button> 
+              
             </div>
             <Image className="rounded-3xl opacity-75  duration-150" layout="fill" objectFit="cover" priority src={watch} quality={100} alt="tyler"/>
           </div>
@@ -39,11 +38,9 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Marc.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Co-founder <br/> Marketing Lead</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
+              A marketing and psychology enthusiast, who tries to understand people to the point where computers are his preferred company.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Marc</p></button> 
+              
             </div>
             <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch4} quality={100} alt="marc" />
           </div>
@@ -55,11 +52,8 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Jalla.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Co-founder <br/> Blockchain Developer</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
+              Incredibly handsome guy who can also code a little bit. Oh, one of the two statements mentioned is a lie.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Jalla</p></button> 
             </div>
             <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch6} quality={100} alt="jalla" />
           </div>
@@ -75,7 +69,7 @@ const Creators = () => {
                 Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
                 vero quidem deleniti nam cupiditate.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Wessa</p></button> 
+              
             </div>
             <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch3} quality={100} alt="wessa" />
           </div>
@@ -87,11 +81,8 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Kev.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">3D Design Lead</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
-              </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Kev</p></button> 
+              Ugliest of the group, but certainly not the dumbest (Jalla). Ps. I'm buying a house in the metaverse soon. See you guys there! </p>     
+              
             </div>
             <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch1} quality={100} alt="kev" />
           </div>
@@ -103,11 +94,9 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Luke.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">3D Motion Design</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
+                A wild fella stranded in the motion designer world. Sounds like the beginning of a bad joke right? Just wait until you see my crypto investments.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@LukeLuke</p></button> 
+              
             </div>
             <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={watch5} quality={100} alt="Luke" />
           </div>
@@ -119,11 +108,9 @@ const Creators = () => {
               <h2 className="font-bebas text-6xl group-hover:text-3xl group-hover:text-left px-5">Tom.</h2>
               <h5 className="font-poppins text-xl group-hover:hidden">Sales</h5>
               <p className="text-lg font-poppins font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Fugiat officiis provident asperiores dolores veniam labore veritatis doloribus, 
-                vero quidem deleniti nam cupiditate.
+                I'm certainly not the best looking person. But I do know how to sell you a pen.
               </p>     
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2"><FaTwitter className="w-10 h-10 bg-blue-500 text-slate-100 p-2 rounded-xl"/> <p>@Tom</p></button> 
+              
             </div>
             <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch} quality={100} alt="Tom" />
           </div>
