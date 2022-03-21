@@ -16,37 +16,61 @@ const Roadmap = () => {
     <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 pb-40 md:pb-20 lg:pb-0">
       <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 h-[600px] relative transition-transform duration-300">
         <div className={"bg-slate-700 relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000">
-              <Image src={watch2} layout="fill" objectFit="cover" className="opacity-60 rounded" />
+              <Image src={watch2} layout="fill" objectFit="cover" className="opacity-40 rounded" />
               <div className="grid cursor-pointer h-full relative" onClick={() => setClick(true)}>
                 <h1 className="font-bebas text-9xl text-slate-100">01</h1>
-                <h2 className="self-end text-slate-100">First Launch.</h2>
+                <h2 className="self-end text-2xl text-slate-100 pb-2">The Clock is Ticking.</h2>
+                <ul className="text-slate-100">
+                  <li>- Build the community to 50.000/100.000 members. </li>
+                  <li>- Launch the first 10k collection.</li>
+                </ul>
               </div>
         </div>
 
         <div className={"bg-slate-500 relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50">
           <div className="grid cursor-pointer h-full" onClick={() => setClick1(true)}>
             <h1 className="font-bebas text-9xl text-slate-100">02</h1>
-            <h2 className="self-end text-slate-100">The clock is ticking.</h2>
+            <h2 className="self-end text-2xl text-slate-100 pb-2">First Launch.</h2>
+            <ul className="text-slate-100">
+              <li>- 1/4ly airdrops.</li>
+              <li>- Finding the most suitable Metaverse for our watches.</li>
+            </ul>
           </div>
         </div>
 
         <div className={"bg-slate-500 relative flex flex-col p-5 rounded lg:row-span-2"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="100">
             <div className="grid cursor-pointer h-full" onClick={() => setClick2(true)}>
               <h1 className="font-bebas text-9xl text-slate-100">03</h1>
-              <h2 className="self-end text-slate-100">We&apos;re in.</h2>
+              <h2 className="self-end text-2xl text-slate-100 pb-2">We&apos;re in!</h2>
+              <ul className="text-slate-100">
+               <li>- Expanding the team.</li>
+               <li>- Joining the Metaverse.</li> 
+               <li>- Second launch of collection.</li> 
+                </ul>
             </div>
         </div>
 
         <div className={"bg-slate-500 relative flex flex-col lg:col-span-2 lg:row-span-2 p-5 rounded"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="150">
             <div className="grid cursor-pointer h-full" onClick={() => setClick3(true)}>
               <h1 className="font-bebas text-9xl text-slate-100">04</h1>
-              <h2 className="self-end text-slate-100">We are here to stay.</h2>
+              <h2 className="self-end text-2xl text-slate-100 pb-2">$Posterity.</h2>
+              <ul className="text-slate-100">
+             <li>- Launching the $POSTERITY cryptocurrency on the Ethereum Blockchain.</li> 
+              <li>- Staking the NFT&apos;s.</li> 
+
+                </ul>
             </div>
         </div>
+
         <div className={"bg-slate-500 relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="200">
             <div className="grid cursor-pointer h-full" onClick={() => setClick4(true)}>
               <h1 className="font-bebas text-9xl text-slate-100">05</h1>
-              <h2 className="self-end text-slate-100">Contact us.</h2>
+              <h2 className="self-end text-2xl text-slate-100 pb-2">The Bridge.</h2>
+              <ul className="text-slate-100">
+                <li>- Real life events</li> 
+                <li>- Merch & release watch collection</li>
+                <li>- Expanding the team even more</li>
+              </ul>
             </div>
         </div>
 
