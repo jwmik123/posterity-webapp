@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { FaTwitter, FaDiscord } from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";
+import Link from 'next/link'
 
 function Header() {
 
@@ -31,10 +32,16 @@ function Header() {
       }
        >Posterity.</div>
       <ul className="hidden lg:flex gap-10 items-center font-poppins text-slate-100">
+        <Link href="/">
           <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
-          <li className="nav-item" data-aos="fade-in" data-aos-delay="200">Roadmap</li>
+        </Link>
+        <li className="nav-item" data-aos="fade-in" data-aos-delay="200">Roadmap</li>
+        <Link href="/gallery">
           <li className="nav-item" data-aos="fade-in" data-aos-delay="300">Gallery</li>
+        </Link>
+        <Link href="/mint">
           <li className="nav-item" data-aos="fade-in" data-aos-delay="400">Mint NFT</li>
+        </Link>
         <ul className="flex divide-x divide-slate-100 items-center">
           <li className="socials" data-aos="fade-in" data-aos-delay="500"><AiFillInstagram className="text-xl mx-5"/></li>
           <li className="socials" data-aos="fade-in" data-aos-delay="600"><FaDiscord className="text-xl mx-5"/></li>
