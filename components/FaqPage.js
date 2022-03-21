@@ -5,7 +5,10 @@ import { BsFillCaretDownFill } from "react-icons/bs";
 const FaqPage = () => {
     const data = {
         rows: [
-            
+            {
+                title: <h1 className="text-4xl text-slate-100 font-bebas">What is an NFT?</h1>,
+                content: <p className="text-lg text-slate-100">An NFT is a digital asset that represents real-world objects like art, music, in-game items and videos. They are bought and sold online, frequently with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos.</p>,
+            },
             {
                 title: <h1 className="text-4xl text-slate-100 font-bebas">How can I buy a Posterity Watch?</h1>,
                 content: <p className="text-lg text-slate-100">You will be able to mint a Posterity Watch through the link in our Discord or clicking on the Mint button on this page.</p>,
@@ -20,12 +23,12 @@ const FaqPage = () => {
             },
             {
                 title: <h1 className="text-4xl text-slate-100 font-bebas">Will the Posterity Watch be listed on exchanges?</h1>,
-                content: <p className="text-lg text-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel excepturi inventore facere commodi possimus, repellendus itaque, corporis similique consequuntur delectus aliquid illum illo nulla debitis hic repellat magnam. Aperiam.</p>,
+                content: <p className="text-lg text-slate-100">Our watches will be available on Opensea.</p>,
             },
-            {
-                title: <h1 className="text-4xl text-slate-100 font-bebas">How do I use my Posterity Watch?</h1>,
-                content: <p className="text-lg text-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel excepturi inventore facere commodi possimus, repellendus itaque, corporis similique consequuntur delectus aliquid illum illo nulla debitis hic repellat magnam. Aperiam.</p>,
-            },
+            // {
+            //     title: <h1 className="text-4xl text-slate-100 font-bebas">How do I use my Posterity Watch?</h1>,
+            //     content: <p className="text-lg text-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel excepturi inventore facere commodi possimus, repellendus itaque, corporis similique consequuntur delectus aliquid illum illo nulla debitis hic repellat magnam. Aperiam.</p>,
+            // },
            
         ],
     };
