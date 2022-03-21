@@ -1,13 +1,9 @@
 import Head from 'next/head'
 import Header from "../components/Header";
 import LandingPage from "../components/LandingPage";
-import Roadmap from "../components/Roadmap";
-import Creators from "../components/Creators";
-import Banner from "../components/Banner";
-import Footer from "../components/Footer";
-import Faq from "../components/FaqPage";
+import Footer from '../components/Footer';
 
-export default function Home() {
+export default function Mint() {
   return (
     <div className="bg-slate-900">
       <Head>
@@ -18,12 +14,7 @@ export default function Home() {
       <main className="bg-slate-900">
         <Header />
         <LandingPage />
-        <Banner />
-        <Roadmap id="roadmap" />
-        <Creators />
-        <Faq />
       </main>
-
       <Footer />
     </div>
   )}
