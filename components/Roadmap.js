@@ -89,7 +89,7 @@ const Roadmap = () => {
         </div>
         <div className={!click2 ? "hidden" :"bg-slate-400 flex p-5 rounded w-full h-full absolute z-10"}>
             <div className="flex w-full justify-between">
-              <h2>We're in.</h2>
+              <h2>We&apos;re in.</h2>
               <VscChromeClose className="w-8 h-8 cursor-pointer" onClick={() => setClick2(false)} />
             </div>  
         </div>
