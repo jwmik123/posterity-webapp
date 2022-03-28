@@ -42,9 +42,9 @@ function Header() {
           <li className="nav-item text-slate-700 line-through cursor-default" data-aos="fade-in" data-aos-delay="300">Gallery</li>
         </Link>
         <ul className={!colorChange ? "flex divide-x divide-gray items-center" : "flex divide-x divide-ketic items-center"}>
-          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://discord.gg/puSCbueBbq" target="_blank"><FaDiscord className="text-xl mx-5"/></a></li>
-          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://twitter.com/PosterityNFT" target="_blank"><FaTwitter className="text-xl mx-5"/></a></li>
-          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://www.instagram.com/posteritywatches/" target="_blank"><AiFillInstagram className="text-xl mx-5"/></a></li>
+          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://discord.gg/puSCbueBbq" target="_blank" rel="noreferrer"><FaDiscord className="text-xl mx-5"/></a></li>
+          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://twitter.com/PosterityNFT" target="_blank" rel="noreferrer"><FaTwitter className="text-xl mx-5"/></a></li>
+          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://www.instagram.com/posteritywatches/" target="_blank" rel="noreferrer"><AiFillInstagram className="text-xl mx-5"/></a></li>
           <li className="cursor-pointer text-gray px-5"  data-aos="fade-in" data-aos-delay="800">
           <svg width="20" height="20" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M90 45C90 69.8514 69.8514 90 45 90C20.1486 90 0 69.8514 0 45C0 20.1486 20.1486 0 45 0C69.8566 0 90 20.1486 90 45Z" fill="white"/>
