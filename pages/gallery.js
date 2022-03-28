@@ -5,13 +5,13 @@ import Footer from '../components/Footer';
 
 export default function Gallery() {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-ketic">
       <Head>
         <title>Posterity</title>
         <meta name="description" content="A metaverse luxury brand" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-slate-900">
+      <main className="bg-ketic">
         <Header />
         <LandingPage />
       </main>

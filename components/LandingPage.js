@@ -9,23 +9,7 @@ function LandingPage() {
   const { address, connectWallet } = useWeb3();
 
   return (
-    <div className="px-5 md:px-20 lg:px-48 h-[100vh] font-poppins flex items-center relative text-slate-100">
-      <div className="z-10 relative w-full lg:w-1/2 flex flex-col">
-        <h1 className="text-6xl lg:text-[120px] xl:text-[120px] font-bebas leading" data-aos="fade-up"  data-aos-delay="400">Posterity Watches</h1>
-        <h3 className="text-2xl text-slate-500 font-poppins font-light"  data-aos="fade-up" data-aos-delay="500">&#47;&#47; A Metaverse Luxury Brand &#47;&#47;</h3>
-        {address 
-          ? (
-            <button className="w-52 h-14 mt-10 bg-rose-600 flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">
-              <h2 className="text-xl text-slate-100">Mint watch ({address.substring(0,4)}...{address.substring(address.length - 4 ,address.length)})</h2>
-            </button>
-          )
-          : (
-            <button onClick={() => connectWallet("injected")} className="w-52 h-14 mt-10 bg-rose-600 flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">
-              <h2 className="text-xl text-slate-100">Connect wallet</h2>
-            </button>
-          )
-        }
-      </div>
+    <div className="px-5 md:px-20 lg:px-48 h-[100vh] font-roboto flex items-center relative text-slate-100">
       <div className={`relative md:absolute h-full w-1/2 right-0`}>
         <Canvas>
           <Suspense fallback={<Loader />}>
@@ -39,6 +23,23 @@ function LandingPage() {
           </Suspense>
         </Canvas>
       </div>
+      <div className="z-10 relative w-full lg:w-3/4 flex flex-col right-0">
+        <h1 className="text-6xl lg:text-[120px] xl:text-[160px] font-staat text-gray leading" data-aos="fade-up"  data-aos-delay="400">Posterity Watches</h1>
+        <h3 className="text-2xl text-slate-500 font-roboto font-light"  data-aos="fade-up" data-aos-delay="500">&#47;&#47; A Metaverse Luxury Brand &#47;&#47;</h3>
+        {address 
+          ? (
+            <button className="w-52 h-14 mt-10 bg-rose-600 flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">
+              <h2 className="text-xl text-slate-100">Mint watch ({address.substring(0,4)}...{address.substring(address.length - 4 ,address.length)})</h2>
+            </button>
+          )
+          : (
+            <button onClick={() => connectWallet("injected")} className="w-52 h-14 mt-10 bg-sky flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">
+              <h2 className="text-xl text-black">Connect wallet</h2>
+            </button>
+          )
+        }
+      </div>
+      
     </div>
   )
 }
