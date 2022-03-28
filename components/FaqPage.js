@@ -34,7 +34,7 @@ const FaqPage = () => {
     };
     
     const styles = {
-        bgColor: "#0f172a",
+        bgColor: "#030315",
         arrowColor: "white",
     };
     
@@ -43,8 +43,8 @@ const FaqPage = () => {
         tabFocus: true
     };
   return (
-    <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 mb-40 md:pb-20 lg:pb-0 bg-slate-900">
-        <h1 className="text-7xl text-slate-100 font-bebas text-center mb-10" data-aos="fade-up">FAQ.</h1>
+    <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 mb-40 md:pb-20 lg:pb-0 bg-ketic">
+        <h1 className="text-7xl text-gray font-bebas text-center mb-10" data-aos="fade-up">FAQ.</h1>
         <Faq
             data={data}
             styles={styles}

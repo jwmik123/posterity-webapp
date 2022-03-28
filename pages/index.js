@@ -7,18 +7,15 @@ import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Faq from "../components/FaqPage";
 
-import { FaTwitter, FaDiscord } from "react-icons/fa";
-import {AiFillInstagram} from "react-icons/ai";
-
 export default function Home() {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-ketic">
       <Head>
         <title>Posterity</title>
         <meta name="description" content="A metaverse luxury brand" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-slate-900">
+      <main className="bg-[#030315]">
         <Header />
         <LandingPage />
         <Banner />
