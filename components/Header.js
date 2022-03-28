@@ -25,30 +25,27 @@ function Header() {
     <div className="top-0 z-50">
       <nav 
         className={ 
-          colorChange ? "z-50 flex w-full bg-slate-900 fixed items-center justify-between py-2 px-5 md:px-20 lg:px-48" 
+          colorChange ? "z-50 flex w-full bg-gray fixed items-center justify-between py-2 px-5 md:px-20 lg:px-48" 
           : "z-50 flex w-full items-center fixed justify-between py-10 px-5 md:px-20 lg:px-48"
         }>
       <div className={
-        colorChange ? "bg-rose-600 text-slate-100 font-bebas text-2xl py-1 px-2 rounded h-18"
-        : "bg-rose-600 text-slate-100 font-bebas text-3xl pt-2 pb-1 px-4 rounded h-18"
+        colorChange ? " flex text-ketic font-staat text-2xl py-1 px-2 rounded h-18"
+        : "bg-sky text-ketic font-staat text-3xl pt-2 pb-1 px-4 rounded h-18"
       }
       >Posterity.</div>
-      <ul className="hidden lg:flex gap-10 items-center font-poppins text-slate-100">
+      <ul className={!colorChange ? "hidden lg:flex gap-10 items-center font-roboto text-gray" : "hidden lg:flex gap-10 items-center font-roboto text-ketic"}>
         <Link href="/">
           <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
         </Link>
         <li className="nav-item" data-aos="fade-in" data-aos-delay="200" onClick={() => animateScrollTo(document.querySelector('.roadmap'))}>Roadmap</li>
         <Link href="/gallery">
-          <li className="nav-item text-slate-500 line-through cursor-default" data-aos="fade-in" data-aos-delay="300">Gallery</li>
+          <li className="nav-item text-slate-700 line-through cursor-default" data-aos="fade-in" data-aos-delay="300">Gallery</li>
         </Link>
-        {/* <Link href="/mint">
-          <li className="nav-item" data-aos="fade-in" data-aos-delay="400">Mint NFT</li>
-        </Link> */}
-        <ul className="flex divide-x divide-slate-100 items-center">
-          <li className="socials" data-aos="fade-in" data-aos-delay="600"><a href="https://discord.gg/puSCbueBbq" target="_blank" rel="noreferrer"><FaDiscord className="text-xl mx-5"/></a></li>
-          <li className="socials" data-aos="fade-in" data-aos-delay="700"><a href="https://twitter.com/PosterityNFT" target="_blank" rel="noreferrer"><FaTwitter className="text-xl mx-5"/></a></li>
-          <li className="socials" data-aos="fade-in" data-aos-delay="500"><a href="https://www.instagram.com/posteritywatches/" target="_blank" rel="noreferrer"><AiFillInstagram className="text-xl mx-5"/></a></li>
-          <li className="socials px-5"  data-aos="fade-in" data-aos-delay="800">
+        <ul className={!colorChange ? "flex divide-x divide-gray items-center" : "flex divide-x divide-ketic items-center"}>
+          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://discord.gg/puSCbueBbq" target="_blank"><FaDiscord className="text-xl mx-5"/></a></li>
+          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://twitter.com/PosterityNFT" target="_blank"><FaTwitter className="text-xl mx-5"/></a></li>
+          <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://www.instagram.com/posteritywatches/" target="_blank"><AiFillInstagram className="text-xl mx-5"/></a></li>
+          <li className="cursor-pointer text-gray px-5"  data-aos="fade-in" data-aos-delay="800">
           <svg width="20" height="20" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M90 45C90 69.8514 69.8514 90 45 90C20.1486 90 0 69.8514 0 45C0 20.1486 20.1486 0 45 0C69.8566 0 90 20.1486 90 45Z" fill="white"/>
               <path d="M22.2011 46.512L22.3953 46.2069L34.1016 27.8939C34.2726 27.6257 34.6749 27.6535 34.8043 27.9447C36.76 32.3277 38.4475 37.7786 37.6569 41.1721C37.3194 42.5683 36.3948 44.4593 35.3545 46.2069C35.2204 46.4612 35.0725 46.7109 34.9153 46.9513C34.8413 47.0622 34.7165 47.127 34.5824 47.127H22.5432C22.2196 47.127 22.0301 46.7756 22.2011 46.512Z" fill="#0f172a"/>
