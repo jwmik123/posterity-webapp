@@ -10,7 +10,6 @@ export default function Gallery() {
         <title>Posterity</title>
         <meta name="description" content="A metaverse luxury brand" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preload" as="font" href="/fonts/Staatliches-Regular.ttf" type="font/ttf" crossorigin="anonymous"></link>
       </Head>
       <main className="bg-ketic">
         <Header />

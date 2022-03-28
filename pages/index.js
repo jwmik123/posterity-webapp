@@ -14,8 +14,9 @@ export default function Home() {
         <title>Posterity</title>
         <meta name="description" content="A metaverse luxury brand" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" as="font" href="/fonts/Staatliches-Regular.ttf" type="font/ttf" crossOrigin="anonymous"></link>
       </Head>
-      <main className="bg-[#030315]">
+      <main className="bg-ketic">
         <Header />
         <LandingPage />
         <Banner />
