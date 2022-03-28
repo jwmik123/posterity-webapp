@@ -15,7 +15,7 @@ const Roadmap = () => {
   return (
     <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 pb-40 md:pb-20 lg:pb-0">
       <h1 className="text-7xl text-gray font-staat text-left" data-aos="fade-up">Roadmap.</h1>
-      <h4 className="text-xl text-gray mb-5">We have one main goal  - to create the largest decentralized wearables brand in the metaverse combined with an engaging and involved community. </h4>
+      <h4 className="text-xl text-gray mb-5" data-aos="fade-up">We have one main goal  - to create the largest decentralized wearables brand in the metaverse combined with an engaging and involved community. </h4>
       <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 h-[600px] relative transition-transform duration-300">
         <div className={"bg-slate-700 relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000">
               <Image src={watch2} layout="fill" objectFit="cover" className="opacity-40 rounded" />
