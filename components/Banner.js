@@ -7,8 +7,8 @@ const Banner = () => {
   return (
     <div className="h-[400px] mt-20 mb-40">
         <div className="absolute w-full mt-12 text-white text-center flex items-center flex-col z-10">
-            <h1 className="text-7xl md:text-9xl font-bebas" data-aos="fade-up">Join our community.</h1>
-            <p className="text-xl font-poppins" data-aos="fade-up" data-aos-delay="50">Together we will create the #1 wearables brand in the Metaverse. <br/>Join our #Posterity community to keep up to date with the latest news, announcements and giveaways. </p>
+            <h1 className="text-7xl md:text-9xl font-staat" data-aos="fade-up">Join our community.</h1>
+            <p className="text-xl font-roboto" data-aos="fade-up" data-aos-delay="50">Together we will create the #1 wearables brand in the Metaverse. <br/>Join our #Posterity community to keep up to date with the latest news, announcements and giveaways. </p>
             <div className=" flex mt-10 w-3/4 md:w-auto md:gap-10 justify-between">
             <button className="banner-button" data-aos="fade-up" data-aos-delay="100"><FaDiscord className="w-8 h-8 bg-ketic text-gray p-2 rounded-lg" /><span className="hidden md:block">Discord</span></button>
             <button className="banner-button" data-aos="fade-up" data-aos-delay="150"><FaTwitter className="w-8 h-8 bg-ketic text-gray p-2 rounded-lg" /> <span className="hidden md:block">Twitter</span></button>

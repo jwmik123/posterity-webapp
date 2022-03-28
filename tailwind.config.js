@@ -23,8 +23,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      bebas: ["Bebas Neue", "cursive"],
-      poppins: ["Poppins", "sans-serif"],
+      staat: ["Staatliches", "cursive"],
+      roboto: ["Roboto", "sans-serif"],
     }
   },
   plugins: [],

@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer className="bg-black flex flex-col md:flex-row gap-5 text-center md:text-left justify-between items-center px-5 md:px-20 lg:px-44 py-5">
-      <div className={ "text-slate-100 font-bebas text-5xl py-2 px-4 rounded h-18"}>Posterity.</div>
+      <div className={ "text-slate-100 font-staat text-5xl py-2 px-4 rounded h-18"}>Posterity.</div>
       <div>
         <p className="text-xl text-slate-100">&copy;2022 POSTERITY.</p>
       </div>

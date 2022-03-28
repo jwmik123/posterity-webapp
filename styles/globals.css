@@ -8,26 +8,34 @@
 /* gray: slate-600 */
 
 @font-face {
-  font-family: "Bebas Neue";
-  src: url("/fonts/BebasNeue-Regular.ttf");
+  font-family: "Staatliches";
+  src: url("/fonts/Staatliches-Regular.ttf");
   font-style: medium;
-  font-weight: 400;
+  font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("/fonts/Poppings-Light.ttf");
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto-Light.ttf");
   font-style: medium;
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("/fonts/Poppings-Regular.ttf");
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto-Regular.ttf");
   font-style: medium;
   font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("/fonts/Roboto-Bold.ttf");
+  font-style: medium;
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -50,12 +58,12 @@ a {
 
 
 /* h4 {
-  @apply text-xl font-poppins;
+  @apply text-xl font-roboto;
 } */
 
 @layer components {
   h2 {
-    @apply text-4xl font-poppins;
+    @apply text-4xl font-roboto;
   }
   .nav-item {
     @apply cursor-pointer;

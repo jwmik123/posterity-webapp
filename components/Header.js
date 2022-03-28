@@ -29,11 +29,11 @@ function Header() {
           : "z-50 flex w-full items-center fixed justify-between py-10 px-5 md:px-20 lg:px-48"
         }>
       <div className={
-        colorChange ? " flex text-ketic font-bebas text-2xl py-1 px-2 rounded h-18"
-        : "bg-sky text-ketic font-bebas text-3xl pt-2 pb-1 px-4 rounded h-18"
+        colorChange ? " flex text-ketic font-staat text-2xl py-1 px-2 rounded h-18"
+        : "bg-sky text-ketic font-staat text-3xl pt-2 pb-1 px-4 rounded h-18"
       }
       >Posterity.</div>
-      <ul className={!colorChange ? "hidden lg:flex gap-10 items-center font-poppins text-gray" : "hidden lg:flex gap-10 items-center font-poppins text-ketic"}>
+      <ul className={!colorChange ? "hidden lg:flex gap-10 items-center font-roboto text-gray" : "hidden lg:flex gap-10 items-center font-roboto text-ketic"}>
         <Link href="/">
           <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
         </Link>
