@@ -28,19 +28,33 @@ function LandingPage() {
         <h3 className="text-2xl text-slate-500 font-roboto font-light"  data-aos="fade-up" data-aos-delay="500">&#47;&#47; A Metaverse Luxury Brand &#47;&#47;</h3>
         {address 
           ? (
-            <button className="w-52 h-14 mt-10 bg-rose-600 flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">
-              <h2 className="text-xl text-slate-100">Mint watch ({address.substring(0,4)}...{address.substring(address.length - 4 ,address.length)})</h2>
+            <button className="w-52 h-14 mt-10 bg-sky flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">
+              <h2 className="text-xl text-ketic">({address.substring(0,4)}...{address.substring(address.length - 4 ,address.length)})</h2>
             </button>
           )
           : (
             <button onClick={() => connectWallet("injected")} className="w-52 h-14 mt-10 bg-sky flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">
-              <h2 className="text-xl text-black">Connect wallet</h2>
+              <h2 className="text-xl text-ketic">Connect wallet</h2>
             </button>
           )
         }
       </div>
       <div className="bg-red-900 mt-36 w-full lg:hidden">
         <h1 className="text-6xl font-staat text-center">Posterity Watches</h1>
+        <div className="flex justify-center">
+        {address 
+          ? (
+            <button className="w-52 h-16 mt-10 bg-sky flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100">
+              <h2 className="text-xl font-roboto font-bold text-ketic">({address.substring(0,4)}...{address.substring(address.length - 4 ,address.length)})</h2>
+            </button>
+          )
+          : (
+            <button onClick={() => connectWallet("injected")} className="w-52 h-14 mt-10 bg-sky flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">
+              <h2 className="text-xl text-ketic">Connect Wallet</h2>
+            </button>
+          )
+        }
+        </div>
       </div>
     </div>
   )
