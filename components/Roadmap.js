@@ -13,10 +13,10 @@ const Roadmap = () => {
   const [click4, setClick4] = useState(false);
 
   return (
-    <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 pb-40 md:pb-20 lg:pb-0">
+    <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 md:pb-20 lg:pb-0">
       <h1 className="text-7xl text-gray font-staat text-left" data-aos="fade-up">Roadmap.</h1>
       <h4 className="text-xl text-gray mb-5" data-aos="fade-up">We have one main goal  - to create the largest decentralized wearables brand in the metaverse combined with an engaging and involved community. </h4>
-      <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 h-[600px] relative transition-transform duration-300">
+      <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 min-h-[600px] relative transition-transform duration-300">
         <div className={"bg-slate-700 relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000">
               <Image src={watch2} layout="fill" objectFit="cover" className="opacity-40 rounded" />
               <div className="grid cursor-pointer h-full relative" onClick={() => setClick(true)}>
@@ -57,10 +57,9 @@ const Roadmap = () => {
               <h1 className="font-staat text-9xl text-ketic">04</h1>
               <h2 className="self-end text-2xl text-ketic pb-2">$Posterity.</h2>
               <ul className="text-ketic">
-             <li>- Launching the $POSTERITY cryptocurrency on the Ethereum Blockchain.</li> 
-              <li>- Staking the NFT&apos;s.</li> 
-
-                </ul>
+                <li>- Launching the $POSTERITY cryptocurrency on the Ethereum Blockchain.</li> 
+                <li>- Staking the NFT&apos;s.</li> 
+              </ul>
             </div>
         </div>
 
@@ -77,7 +76,7 @@ const Roadmap = () => {
         </div>
 
         {/* fullscreen version */}
-        <div className={!click ? "hidden" :"bg-slate-400 flex p-5 rounded w-full h-full absolute z-10"}>
+        {/* <div className={!click ? "hidden" :"bg-slate-400 flex p-5 rounded w-full h-full absolute z-10"}>
             <div className="flex w-full justify-between">
               <h2>First Launch.</h2>
               <VscChromeClose className="w-8 h-8 cursor-pointer" onClick={() => setClick(false)} />
@@ -106,7 +105,7 @@ const Roadmap = () => {
               <h2>Contact us.</h2>
               <VscChromeClose className="w-8 h-8 cursor-pointer" onClick={() => setClick4(false)} />
             </div>  
-        </div>
+        </div> */}
       </div>
     </div>
   )

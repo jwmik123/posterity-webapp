@@ -9,8 +9,8 @@ function LandingPage() {
   const { address, connectWallet } = useWeb3();
 
   return (
-    <div className="px-5 md:px-20 lg:px-48 h-[100vh] font-roboto flex items-center relative text-slate-100">
-      <div className={`relative md:absolute h-full w-1/2 right-0`}>
+    <div className="px-5 md:px-20 lg:px-48 lg:h-[100vh] font-roboto flex items-center relative text-slate-100">
+      <div className={`hidden lg:block relative md:absolute h-full w-1/2 right-0`}>
         <Canvas>
           <Suspense fallback={<Loader />}>
             <Object />
@@ -23,7 +23,7 @@ function LandingPage() {
           </Suspense>
         </Canvas>
       </div>
-      <div className="z-10 relative w-full lg:w-3/4 flex flex-col right-0">
+      <div className="hidden z-10 relative w-full lg:w-3/4 lg:flex flex-col right-0">
         <h1 className="text-6xl lg:text-[120px] xl:text-[160px] font-staat text-gray leading" data-aos="fade-up"  data-aos-delay="400">Posterity Watches</h1>
         <h3 className="text-2xl text-slate-500 font-roboto font-light"  data-aos="fade-up" data-aos-delay="500">&#47;&#47; A Metaverse Luxury Brand &#47;&#47;</h3>
         {address 
@@ -39,7 +39,9 @@ function LandingPage() {
           )
         }
       </div>
-      
+      <div className="bg-red-900 mt-36 w-full">
+        <h1 className="text-6xl font-staat text-center">Posterity Watches</h1>
+      </div>
     </div>
   )
 }
