@@ -5,6 +5,9 @@ import dynamic from 'next/dynamic';
 const Spline = dynamic(() => import('@splinetool/react-spline'), {
   ssr: false,
 });
+const Spline1 = dynamic(() => import('@splinetool/react-spline'), {
+  ssr: false,
+});
 
 const Roadmap = () => {
   const [click, setClick] = useState(false);
@@ -17,10 +20,11 @@ const Roadmap = () => {
     <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 md:pb-20 lg:pb-0">
       <h1 className="text-7xl text-gray font-staat text-left" data-aos="fade-up">Roadmap.</h1>
       <h4 className="text-xl text-gray mb-5" data-aos="fade-up">We have one main goal  - to create the largest decentralized wearables brand in the metaverse combined with an engaging and involved community. </h4>
-      <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 min-h-[600px] relative transition-transform duration-300">
-        <div className={"bg-gray relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 min-h-[600px] relative transition-transform duration-300">
+        <div className={"relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000">
               {/* <Image src={watch2} layout="fill" objectFit="cover" className="opacity-40 rounded" /> */}
               {/* <iframe src='https://my.spline.design/3dconcreteshapecopy-c319575eb1c7e917a9b803a800ce792e/' frameborder='0' width='100%' height='100%'></iframe> */}
+     
               <Spline className="hidded lg:block" scene="https://prod.spline.design/JwyCLVV9Ema1SDDc/scene.spline" />
               {/* <div className="lg:hidden grid cursor-pointer h-full relative" onClick={() => setClick(true)}>
                 <h1 className="font-staat text-9xl text-gray">01</h1>
@@ -32,19 +36,20 @@ const Roadmap = () => {
               </div> */}
         </div>
 
-        <div className={"bg-gray relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50">
-          <div className="grid cursor-pointer h-full" onClick={() => setClick1(true)}>
+        <div className={" relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50">
+          {/* <div className="grid cursor-pointer h-full" onClick={() => setClick1(true)}>
             <h1 className="font-staat text-9xl text-ketic">02</h1>
             <h2 className="self-end text-2xl text-ketic pb-2">First Launch.</h2>
             <ul className="text-ketic">
               <li>- 1/4ly airdrops.</li>
               <li>- Finding the most suitable Metaverse for our watches.</li>
             </ul>
-          </div>
+          </div> */}
+          <Spline className="hidded lg:block" scene="https://prod.spline.design/sTKGGd5CJ3H73rsn/scene.spline" />
         </div>
 
-        <div className={"bg-gray relative flex flex-col p-5 rounded lg:row-span-2"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="100">
-            <div className="grid cursor-pointer h-full" onClick={() => setClick2(true)}>
+        <div className={" relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="100">
+            {/* <div className="grid cursor-pointer h-full" onClick={() => setClick2(true)}>
               <h1 className="font-staat text-9xl text-ketic">03</h1>
               <h2 className="self-end text-2xl text-ketic pb-2">We&apos;re in!</h2>
               <ul className="text-ketic">
@@ -52,22 +57,24 @@ const Roadmap = () => {
                <li>- Joining the Metaverse.</li> 
                <li>- Second launch of collection.</li> 
                 </ul>
-            </div>
+            </div> */}
+            <Spline className="hidded lg:block" scene="https://prod.spline.design/TMv9R8syr730v37V/scene.spline" />
         </div>
 
-        <div className={"bg-gray relative flex flex-col lg:col-span-2 lg:row-span-2 p-5 rounded"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="150">
-            <div className="grid cursor-pointer h-full" onClick={() => setClick3(true)}>
+        <div className={"relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="150">
+        <Spline className="hidded lg:block" scene="https://prod.spline.design/oSNnrCXN6BXl1KsX/scene.spline" />
+            {/* <div className="grid cursor-pointer h-full" onClick={() => setClick3(true)}>
               <h1 className="font-staat text-9xl text-ketic">04</h1>
               <h2 className="self-end text-2xl text-ketic pb-2">$Posterity.</h2>
               <ul className="text-ketic">
                 <li>- Launching the $POSTERITY cryptocurrency on the Ethereum Blockchain.</li> 
                 <li>- Staking the NFT&apos;s.</li> 
               </ul>
-            </div>
+            </div> */}
         </div>
 
-        <div className={"bg-gray relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="200">
-            <div className="grid cursor-pointer h-full" onClick={() => setClick4(true)}>
+        <div className={" relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000"  data-aos-delay="200">
+            {/* <div className="grid cursor-pointer h-full" onClick={() => setClick4(true)}>
               <h1 className="font-staat text-9xl text-ketic">05</h1>
               <h2 className="self-end text-2xl text-ketic pb-2">The Bridge.</h2>
               <ul className="text-ketic">
@@ -75,7 +82,8 @@ const Roadmap = () => {
                 <li>- Merch & release watch collection</li>
                 <li>- Expanding the team even more</li>
               </ul>
-            </div>
+            </div> */}
+            <Spline className="hidded lg:block" scene="https://prod.spline.design/kVczn188Oyapf-Ec/scene.spline" />
         </div>
 
         {/* fullscreen version */}
