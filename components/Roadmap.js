@@ -1,9 +1,6 @@
-import React, {useEffect, useState} from 'react'
-import Image from 'next/image';
+import React, { useState } from 'react'
 
-import { VscChromeClose } from "react-icons/vsc";
-
-import watch2 from "../public/images/posterity_10.png";
+import Spline from '@splinetool/react-spline';
 
 const Roadmap = () => {
   const [click, setClick] = useState(false);
@@ -17,16 +14,17 @@ const Roadmap = () => {
       <h1 className="text-7xl text-gray font-staat text-left" data-aos="fade-up">Roadmap.</h1>
       <h4 className="text-xl text-gray mb-5" data-aos="fade-up">We have one main goal  - to create the largest decentralized wearables brand in the metaverse combined with an engaging and involved community. </h4>
       <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 min-h-[600px] relative transition-transform duration-300">
-        <div className={"bg-slate-700 relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000">
-              <Image src={watch2} layout="fill" objectFit="cover" className="opacity-40 rounded" />
-              <div className="grid cursor-pointer h-full relative" onClick={() => setClick(true)}>
+        <div className={"bg-gray relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000">
+              {/* <Image src={watch2} layout="fill" objectFit="cover" className="opacity-40 rounded" /> */}
+              <Spline scene="https://draft.spline.design/MpCmfLRuCn3nrHhm/scene.spline" />
+              {/* <div className="grid cursor-pointer h-full relative" onClick={() => setClick(true)}>
                 <h1 className="font-staat text-9xl text-gray">01</h1>
                 <h2 className="self-end text-2xl text-gray pb-2">The Clock is Ticking.</h2>
                 <ul className="text-gray">
                   <li>- Build the community to 50.000/100.000 members. </li>
                   <li>- Launch the first 10k collection.</li>
                 </ul>
-              </div>
+              </div> */}
         </div>
 
         <div className={"bg-gray relative flex flex-col p-5 rounded"} data-aos="flip-up" data-aos-duration="1000" data-aos-delay="50">
