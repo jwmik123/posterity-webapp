@@ -19,10 +19,11 @@ const Creators = () => {
         <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
+
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Tyler.</h2>
               <h5 className="font-roboto text-xl group-hover:hidden">Co-founder <br /> Community Lead</h5>
               <p className="text-lg font-roboto font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-                Also known as the guy who loves to help and bring people together. But don't mistake his kindness for weakness, he will ban you if you act like a shitbag!
+                Also known as the guy who loves to help and bring people together. But don&apos;t mistake his kindness for weakness, he will ban you if you act like a shitbag!
               </p>     
               
             </div>
@@ -30,7 +31,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="50">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Mars.</h2>
@@ -44,7 +45,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="100">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Jalla.</h2>
@@ -52,12 +53,14 @@ const Creators = () => {
               <p className="text-lg font-roboto font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
               Incredibly handsome guy who can also code a little bit. Oh, one of the two statements mentioned is a lie.
               </p>     
+
+
             </div>
             <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch6} quality={100} alt="jalla" />
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="50">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Wessa.</h2>
@@ -71,20 +74,19 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="100">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Kev.</h2>
               <h5 className="font-roboto text-xl group-hover:hidden">3D Design Lead</h5>
               <p className="text-lg font-roboto font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-              Ugliest of the group, but certainly not the dumbest (Jalla). Ps. I'm buying a house in the metaverse soon. See you guys there! </p>     
-              
+              Ugliest of the group, but certainly not the dumbest (Jalla). Ps. I&apos;m buying a house in the metaverse soon. See you guys there! </p>          
             </div>
             <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch1} quality={100} alt="kev" />
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="150">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Luke.</h2>
@@ -98,7 +100,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="50">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Tom.</h2>
@@ -112,7 +114,7 @@ const Creators = () => {
           </div>
         </div>
 
-        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up">
+        <div className="creator flex justify-center flex-col items-center" data-aos="fade-up" data-aos-delay="350">
           <div className="aspect-square w-80 md:w-64 lg:w-80 flex items-center justify-center relative group hover:scale-105 transition-all duration-150">
             <div className="absolute z-10">
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Join us.</h2>

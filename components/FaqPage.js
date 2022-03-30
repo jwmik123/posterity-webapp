@@ -25,11 +25,6 @@ const FaqPage = () => {
                 title: <h1 className="text-4xl text-slate-100 font-staat">Will the Posterity Watch be listed on exchanges?</h1>,
                 content: <p className="text-lg text-slate-100">Our watches will be available on Opensea.</p>,
             },
-            // {
-            //     title: <h1 className="text-4xl text-slate-100 font-staat">How do I use my Posterity Watch?</h1>,
-            //     content: <p className="text-lg text-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vel excepturi inventore facere commodi possimus, repellendus itaque, corporis similique consequuntur delectus aliquid illum illo nulla debitis hic repellat magnam. Aperiam.</p>,
-            // },
-           
         ],
     };
     

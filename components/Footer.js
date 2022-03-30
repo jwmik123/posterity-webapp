@@ -14,9 +14,9 @@ function Footer() {
         <a href='#'>Terms of Service</a>
       </div>
       <div className="flex flex-row gap-4">
-        <button className="bg-slate-700 text-slate-100 p-2 rounded-xl hover:scale-110 duration-100"><a href="https://discord.gg/puSCbueBbq" target="_blank"><FaDiscord className="w-6 h-6"/></a></button>
-          <button className="bg-slate-700 text-slate-100 p-2 rounded-xl hover:scale-110 duration-100"><a href="https://twitter.com/PosterityNFT" target="_blank"><FaTwitter className="w-6 h-6"/></a></button>
-          <button className="bg-slate-700 text-slate-100 p-2 rounded-xl hover:scale-110 duration-100"><a href="https://www.instagram.com/posteritywatches/" target="_blank"><AiFillInstagram className="w-6 h-6"/></a></button>
+          <button className="bg-gray text-ketic p-2 rounded-xl hover:scale-110 duration-100"><a href="https://discord.gg/puSCbueBbq" target="_blank" rel="noreferrer"><FaDiscord className="w-6 h-6"/></a></button>
+          <button className="bg-gray text-ketic p-2 rounded-xl hover:scale-110 duration-100"><a href="https://twitter.com/PosterityNFT" target="_blank" rel="noreferrer"><FaTwitter className="w-6 h-6"/></a></button>
+          <button className="bg-gray text-ketic p-2 rounded-xl hover:scale-110 duration-100"><a href="https://www.instagram.com/posteritywatches/" target="_blank" rel="noreferrer"><AiFillInstagram className="w-6 h-6"/></a></button>
         </div>
     </footer>
   )

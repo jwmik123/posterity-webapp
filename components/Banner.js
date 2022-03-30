@@ -10,9 +10,9 @@ const Banner = () => {
             <h1 className="text-7xl md:text-9xl font-staat" data-aos="fade-up">Join our community.</h1>
             <p className="text-xl font-roboto" data-aos="fade-up" data-aos-delay="50">Together we will create the #1 wearables brand in the Metaverse. <br/>Join our #Posterity community to keep up to date with the latest news, announcements and giveaways. </p>
             <div className=" flex mt-10 w-3/4 md:w-auto md:gap-10 justify-between">
-            <button className="banner-button" data-aos="fade-up" data-aos-delay="100"><FaDiscord className="w-8 h-8 bg-ketic text-gray p-2 rounded-lg" /><span className="hidden md:block">Discord</span></button>
-            <button className="banner-button" data-aos="fade-up" data-aos-delay="150"><FaTwitter className="w-8 h-8 bg-ketic text-gray p-2 rounded-lg" /> <span className="hidden md:block">Twitter</span></button>
-            <button className="banner-button" data-aos="fade-up" data-aos-delay="200"><AiFillInstagram className="w-8 h-8 bg-ketic text-gray p-2 rounded-lg" /> <span className="hidden md:block">Instagram</span></button>
+            <button className="banner-button" data-aos="fade-up" data-aos-delay="100"><a className="flex gap-2 items-center" href="https://discord.gg/puSCbueBbq" target="_blank" rel="noreferrer"><FaDiscord className="w-8 h-8 bg-ketic text-gray p-2 rounded-lg" /><span className="hidden md:block">Discord</span></a></button>
+            <button className="banner-button" data-aos="fade-up" data-aos-delay="150"><a className="flex gap-2 items-center" href="https://twitter.com/PosterityNFT" target="_blank" rel="noreferrer"><FaTwitter className="w-8 h-8 bg-ketic text-gray p-2 rounded-lg" /> <span className="hidden md:block">Twitter</span></a></button>
+            <button className="banner-button" data-aos="fade-up" data-aos-delay="200"><a className="flex gap-2 items-center" href="https://www.instagram.com/posteritywatches/" target="_blank" rel="noreferrer"><AiFillInstagram className="w-8 h-8 bg-ketic text-gray p-2 rounded-lg" /><span className="hidden md:block">Instagram</span></a></button>
         </div>
         </div>
         <div className="svg text-center w-full relative flex justify-center my-10">
