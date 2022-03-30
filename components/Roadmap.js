@@ -21,8 +21,8 @@ const Roadmap = () => {
         <div className={"bg-gray relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000">
               {/* <Image src={watch2} layout="fill" objectFit="cover" className="opacity-40 rounded" /> */}
               {/* <iframe src='https://my.spline.design/3dconcreteshapecopy-c319575eb1c7e917a9b803a800ce792e/' frameborder='0' width='100%' height='100%'></iframe> */}
-              <Spline scene="https://draft.spline.design/MpCmfLRuCn3nrHhm/scene.spline" />
-              {/* <div className="grid cursor-pointer h-full relative" onClick={() => setClick(true)}>
+              <Spline className="hidded lg:block" scene="https://prod.spline.design/JwyCLVV9Ema1SDDc/scene.spline" />
+              {/* <div className="lg:hidden grid cursor-pointer h-full relative" onClick={() => setClick(true)}>
                 <h1 className="font-staat text-9xl text-gray">01</h1>
                 <h2 className="self-end text-2xl text-gray pb-2">The Clock is Ticking.</h2>
                 <ul className="text-gray">
