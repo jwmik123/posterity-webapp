@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 
-import Spline from '@splinetool/react-spline';
+import dynamic from 'next/dynamic';
+
+const Spline = dynamic(() => import('@splinetool/react-spline'), {
+  ssr: false,
+});
 
 const Roadmap = () => {
   const [click, setClick] = useState(false);
@@ -16,6 +20,7 @@ const Roadmap = () => {
       <div className="grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-2 lg:gap-4 min-h-[600px] relative transition-transform duration-300">
         <div className={"bg-gray relative flex flex-col rounded"} data-aos="flip-up" data-aos-duration="1000">
               {/* <Image src={watch2} layout="fill" objectFit="cover" className="opacity-40 rounded" /> */}
+              {/* <iframe src='https://my.spline.design/3dconcreteshapecopy-c319575eb1c7e917a9b803a800ce792e/' frameborder='0' width='100%' height='100%'></iframe> */}
               <Spline scene="https://draft.spline.design/MpCmfLRuCn3nrHhm/scene.spline" />
               {/* <div className="grid cursor-pointer h-full relative" onClick={() => setClick(true)}>
                 <h1 className="font-staat text-9xl text-gray">01</h1>
