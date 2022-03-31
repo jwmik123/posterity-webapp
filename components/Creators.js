@@ -106,9 +106,8 @@ const Creators = () => {
               <h2 className="font-staat text-6xl group-hover:text-3xl group-hover:text-left px-5">Tom.</h2>
               <h5 className="font-roboto text-xl group-hover:hidden">Sales</h5>
               <p className="text-lg font-roboto font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos modi voluptatibus esse voluptates totam fugit explicabo dolorum ut beatae repellat illum iusto nisi quae nesciunt voluptate labore, laborum hic.
+                Tried to understand Solidity to become a full-time developer (Jalla is my idol), but ended up in mastering the art of selling. Not like Jordan Belfort, but with standards and values.
               </p>     
-              
             </div>
             <Image className="rounded-3xl opacity-75 " layout="fill" objectFit="cover" priority src={watch} quality={100} alt="Tom" />
           </div>
