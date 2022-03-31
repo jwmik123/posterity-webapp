@@ -13,30 +13,29 @@ const connectors = {
 };
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     AOS.init();
     // barba.init({});
   })
   
+  const [pageLoading, setPageLoading] = useState(false);
   useEffect(() => {
-    setTimeout(() =>  setLoading(true), 4000);
-  }, [])
+    setTimeout(() => setPageLoading(true), 5500);
+  }, []);
 
   return ( 
-    <>
-    {loading ? (
-      <ThirdwebProvider
+    <ThirdwebProvider
       supportedChainIds={supportedChainIds}
       connectors={connectors}
-    >
-      <Component {...pageProps} />
-    </ThirdwebProvider> 
-    ) : (
+      >
+      {!pageLoading ? (
       <LoadingScreen />
-    )}
-    </> 
+    ) : (
+      <Component {...pageProps} />
+      )
+    }   
+    </ThirdwebProvider> 
   )
 }
 
