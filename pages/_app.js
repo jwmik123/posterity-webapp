@@ -25,18 +25,19 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return ( 
-    <ThirdwebProvider
-      supportedChainIds={supportedChainIds}
-      connectors={connectors}
-      >
-      {!pageLoading ? (
-      <LoadingScreen />
-    ) : (
-      <Component {...pageProps} />
-      )
-    }   
-    </ThirdwebProvider> 
+    <>
+    {!pageLoading ? <LoadingScreen /> : (
+       <ThirdwebProvider
+       supportedChainIds={supportedChainIds}
+       connectors={connectors}
+       >
+       <Component {...pageProps} />
+       )
+     </ThirdwebProvider>
+    )}
+ </>
   )
+  
 }
 
 export default MyApp
