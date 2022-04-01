@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
   
   const [pageLoading, setPageLoading] = useState(false);
   useEffect(() => {
-    setTimeout(() => setPageLoading(true), 5500);
+    setTimeout(() => setPageLoading(true), 3000);
   }, []);
 
   return ( 
