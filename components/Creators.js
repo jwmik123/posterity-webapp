@@ -120,7 +120,7 @@ const Creators = () => {
               <p className="text-lg font-roboto font-light text-left px-5 hidden group-hover:block md:group-hover:text-sm lg:group-hover:text-lg">
                 Do you think you have what it takes?
               </p> 
-              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2 bg-rose-700 p-2 rounded"><p>Apply Now</p></button> 
+              <button className="hidden mx-5 mt-2 group-hover:flex flex-row items-center gap-2 bg-sky p-2 rounded text-ketic"><a href="mailto:info@posteritywatches.io">Apply Now</a></button> 
             </div>
             <Image className="rounded-3xl opacity-75" layout="fill" objectFit="cover" priority src={watch2} quality={100} alt="joinus" />
           </div>
