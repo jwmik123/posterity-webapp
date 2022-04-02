@@ -67,7 +67,7 @@ const Roadmap = () => {
             <h2 className="text-4xl uppercase font-bold">The Posterity Coin.</h2>
             <ul className="text-lg">
               <li>- Launching the $POSTERITY cryptocurrency on the Ethereum Blockchain.</li>
-              <li>- Staking the NFT's to create passive income for the community.</li>
+              <li>- Staking the NFT&apos;s to create passive income for the community.</li>
             </ul>
           </div>
         </div>
