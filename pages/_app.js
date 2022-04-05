@@ -21,8 +21,10 @@ function MyApp({ Component, pageProps }) {
   
   const [pageLoading, setPageLoading] = useState(false);
   useEffect(() => {
-    setTimeout(() => setPageLoading(true), 3000);
+    setTimeout(() => setPageLoading(true), 1500);
   }, []);
+
+  debugger;
 
   return ( 
     <>
@@ -32,7 +34,6 @@ function MyApp({ Component, pageProps }) {
        connectors={connectors}
        >
        <Component {...pageProps} />
-       )
      </ThirdwebProvider>
     )}
  </>

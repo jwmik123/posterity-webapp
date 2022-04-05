@@ -42,8 +42,8 @@ function Header() {
           <li className="nav-item" data-aos="fade-in" data-aos-delay="100">Home</li>
         </Link>
         <li className="nav-item" data-aos="fade-in" data-aos-delay="200" onClick={() => animateScrollTo(document.querySelector('.roadmap'))}>Roadmap</li>
-        <Link href="/gallery">
-          <li className="nav-item text-slate-700 line-through cursor-default" data-aos="fade-in" data-aos-delay="300">Gallery</li>
+        <Link href="#">
+          <li className="nav-item text-slate-700 line-through cursor-not-allowed" data-aos="fade-in" data-aos-delay="300">Gallery</li>
         </Link>
         <ul className={!colorChange ? "flex divide-x divide-gray items-center" : "flex divide-x divide-ketic items-center"}>
           <li className={!colorChange ? "cursor-pointer text-gray" : "cursor-pointer text-ketic"}><a href="https://discord.gg/puSCbueBbq" target="_blank" rel="noreferrer"><FaDiscord className="text-xl mx-5"/></a></li>
