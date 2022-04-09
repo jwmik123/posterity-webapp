@@ -19,10 +19,10 @@ function MyApp({ Component, pageProps }) {
     // barba.init({});
   })
   
-  const [pageLoading, setPageLoading] = useState(false);
-  useEffect(() => {
-    setTimeout(() => setPageLoading(true), 1500);
-  }, []);
+  const [pageLoading, setPageLoading] = useState(true);
+  // useEffect(() => {
+  //   setTimeout(() => setPageLoading(true), 1500);
+  // }, []);
 
   debugger;
 

@@ -23,9 +23,9 @@ function LandingPage() {
           </Suspense>
         </Canvas>
       </div>
-      <div className="hidden z-10 relative w-full lg:w-3/4 lg:flex flex-col right-0">
-        <h1 className="text-6xl lg:text-[120px] xl:text-[160px] font-staat text-gray leading" data-aos="fade-up"  data-aos-delay="400">Posterity Watches</h1>
-        <h3 className="text-2xl text-slate-500 font-roboto font-light"  data-aos="fade-up" data-aos-delay="500">&#47;&#47; A Metaverse Luxury Brand &#47;&#47;</h3>
+      <div className="hidden relative w-full lg:w-3/5 lg:flex flex-col pointer-events-none">
+        <h1 className="text-6xl lg:text-[120px] xl:text-[160px] font-staat text-gray leading select-none" data-aos="fade-up"  data-aos-delay="400">Posterity Watches</h1>
+        <h3 className="text-2xl text-slate-500 font-roboto font-light select-none"  data-aos="fade-up" data-aos-delay="500">&#47;&#47; A Metaverse Luxury Brand &#47;&#47;</h3>
         {address 
           ? (
             <button className="w-52 h-14 mt-10 bg-sky flex items-center justify-center rounded-md cursor-pointer hover:scale-110 duration-100" data-aos="fade-up" data-aos-delay="600">

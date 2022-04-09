@@ -6,7 +6,7 @@ import React, {lazy, Suspense} from 'react';
 
 const Roadmap = () => {
   return (
-    <div className="mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 md:pb-20 lg:pb-0">
+    <div className="roadmap pt-24 -mt-24 mx-5 md:mx-10 md:px-10 lg:mx-24 lg:px-24 md:pb-20 lg:pb-0">
       <h1 className="text-7xl text-gray font-staat text-center" data-aos="fade-up">Roadmap.</h1>
       <h4 className="text-xl text-gray mb-5 text-center" data-aos="fade-up">
         We have one main goal - to create the largest decentralized wearables 
