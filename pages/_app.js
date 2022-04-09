@@ -24,8 +24,6 @@ function MyApp({ Component, pageProps }) {
   //   setTimeout(() => setPageLoading(true), 1500);
   // }, []);
 
-  debugger;
-
   return ( 
     <>
     {!pageLoading ? <LoadingScreen /> : (

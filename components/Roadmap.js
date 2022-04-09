@@ -1,8 +1,5 @@
-import React, {lazy, Suspense} from 'react';
-
-// import dynamic from 'next/dynamic';
-
-// const Spline = lazy(() => import('@splinetool/react-spline'));
+import React from 'react';
+import { isMobile } from 'react-device-detect';
 
 const Roadmap = () => {
   return (
@@ -28,7 +25,7 @@ const Roadmap = () => {
           <div className="spacing"></div>
           <div className="spacing"></div>
 
-          <div className="border-b-2 py-10 px-5" data-aos="fade-left" data-aos-delay="300">
+          <div className="border-b-2 py-10 px-5" data-aos={isMobile ? "fade-up" : "fade-left"} data-aos-delay="300">
             <h1 className="font-staat text-9xl text-sky">02</h1>
             <h2 className="text-4xl uppercase font-bold">Post Launch.</h2>
             <ul className="text-lg">
@@ -41,7 +38,7 @@ const Roadmap = () => {
           <div className="spacing"></div>
           <div className="spacing"></div>
 
-          <div className="border-b-2 py-10 px-5" data-aos="fade-right" data-aos-delay="300">
+          <div className="border-b-2 py-10 px-5" data-aos={isMobile ? "fade-up" : "fade-right"} data-aos-delay="300">
             <h1 className="font-staat text-9xl text-sky">03</h1>
             <h2 className="text-4xl uppercase font-bold">We&apos;re In.</h2>
             <ul className="text-lg">
@@ -54,7 +51,7 @@ const Roadmap = () => {
           <div className="spacing"></div>
           <div className="spacing"></div>
 
-          <div className="border-b-2 py-10 px-5" data-aos="fade-left" data-aos-delay="300">
+          <div className="border-b-2 py-10 px-5" data-aos={isMobile ? "fade-up" : "fade-left"} data-aos-delay="300">
             <h1 className="font-staat text-9xl text-sky">04</h1>
             <h2 className="text-4xl uppercase font-bold">The Posterity Coin.</h2>
             <ul className="text-lg">
@@ -66,7 +63,7 @@ const Roadmap = () => {
           <div className="spacing"></div>
           <div className="spacing"></div>
 
-          <div className="border-b-2 py-10 px-5" data-aos="fade-right" data-aos-delay="300">
+          <div className="border-b-2 py-10 px-5" data-aos={isMobile ? "fade-up" : "fade-right"} data-aos-delay="300">
             <h1 className="font-staat text-9xl text-sky">05</h1>
             <h2 className="text-4xl uppercase font-bold">The Bridge.</h2>
             <ul className="text-lg">
