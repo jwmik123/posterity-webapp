@@ -8,11 +8,12 @@ export default function Model(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/TheWatchSite.gltf");
 
-  const glass = new THREE.MeshPhysicalMaterial({
-    roughness: 0,
-    transmission: 1,
-    thickness: 0.1,
-  })
+  // TODO: import glass material
+  // const glass = new THREE.MeshPhysicalMaterial({
+  //   roughness: 0,
+  //   transmission: 1,
+  //   thickness: 0.1,
+  // })
 
   const [smallHand, setSmallHand] = useState(0);
   const [bigHand, setBigHand] = useState(0);
@@ -27,9 +28,9 @@ export default function Model(props) {
 
     const interval = setInterval(() => {
       // Converting current time to 360 degree scale
-      let hr_rotation = -(30 * hours + minutes / 2); 
-      let min_rotation = -(6 * minutes);
-      let sec_rotation = (6 * seconds) + 180;
+      let hr_rotation = -(30 * hours + minutes / 2) - 50; 
+      let min_rotation = -(6 * minutes) - 300;
+      let sec_rotation = (6 * seconds) - 30;
 
       let radianHr = degrees_to_radians(hr_rotation);
       let radianMin = degrees_to_radians(min_rotation);
@@ -51,7 +52,7 @@ export default function Model(props) {
     return () => clearInterval(interval);
   })
 
-  useFrame(({clock}) => {
+  useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
     group.current.rotation.x = Math.PI / 1.75 + Math.cos(a / 4) / 8;
     group.current.rotation.y = Math.sin(a / 4) / 8;
@@ -60,8 +61,7 @@ export default function Model(props) {
   })
 
   return (
-
-    <group scale={75} ref={group} {...props} dispose={null}>
+<group scale={75} ref={group} {...props} dispose={null}>
       <group name="Scene">
         <group
           name="Empty"
@@ -70,31 +70,40 @@ export default function Model(props) {
           userData={{ name: "Empty" }}
         />
         <mesh
-          name="Cube"
+          name="Logo"
           castShadow
           receiveShadow
-          geometry={nodes.Cube.geometry}
-          material={nodes.Cube.material}
+          geometry={nodes.Logo.geometry}
+          material={nodes.Logo.material}
           position={[-0.000186, 0.000023, 0.000068]}
           scale={0.490183}
-          userData={{ name: "Cube" }}
+          userData={{ name: "Logo" }}
         />
         <mesh
-          name="Cylinder"
+          name="Case"
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder.geometry}
+          geometry={nodes.Case.geometry}
+          material={nodes.Case.material}
+          userData={{ name: "Case" }}
+        />
+        <mesh
+          name="CaseCon"
+          castShadow
+          receiveShadow
+          geometry={nodes.CaseCon.geometry}
+          material={nodes.CaseCon.material}
+          userData={{ name: "CaseCon" }}
+        />
+        <mesh
+          name="Bottom"
+          castShadow
+          receiveShadow
+          geometry={nodes.Bottom.geometry}
           material={materials.RoseGold}
-          scale={0.490183}
-          userData={{ name: "Cylinder" }}
-        />
-        <mesh
-          name="Cylinder001"
-          castShadow
-          receiveShadow
-          geometry={nodes.Cylinder001.geometry}
-          material={nodes.Cylinder001.material}
-          userData={{ name: "Cylinder.001" }}
+          position={[0, -0.006147, 0]}
+          scale={0.838996}
+          userData={{ name: "Bottom" }}
         />
         <group
           name="BigHand"
@@ -162,143 +171,135 @@ export default function Model(props) {
           userData={{ name: "MidPoint" }}
         />
         <mesh
-          name="Cylinder003"
+          name="12"
           castShadow
           receiveShadow
-          geometry={nodes.Cylinder003.geometry}
-          material={nodes.Cylinder003.material}
-          userData={{ name: "Cylinder.003" }}
-        />
-        <mesh
-          name="Text"
-          castShadow
-          receiveShadow
-          geometry={nodes.Text.geometry}
-          material={nodes.Text.material}
+          geometry={nodes["12"].geometry}
+          material={nodes["12"].material}
           position={[0, -0.001681, 0]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text" }}
-        >
-          <mesh
-            name="Text001"
-            castShadow
-            receiveShadow
-            geometry={nodes.Text001.geometry}
-            material={nodes.Text001.material}
-            rotation={[0, -0.539633, 0]}
-            scale={[0.921987, 1, 1.172444]}
-            userData={{ name: "Text.001" }}
-          />
-        </mesh>
+          userData={{ name: "12" }}
+        />
         <mesh
-          name="Text002"
+          name="1"
           castShadow
           receiveShadow
-          geometry={nodes.Text002.geometry}
-          material={nodes.Text002.material}
+          geometry={nodes["1"].geometry}
+          material={nodes["1"].material}
+          position={[0, -0.001681, 0]}
+          rotation={[0, -Math.PI / 6, 0]}
+          scale={[0.003314, 0.003314, 0.005239]}
+          userData={{ name: "1" }}
+        />
+        <mesh
+          name="2"
+          castShadow
+          receiveShadow
+          geometry={nodes["2"].geometry}
+          material={nodes["2"].material}
           position={[0, -0.001681, 0]}
           rotation={[0, -Math.PI / 3, 0]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.002" }}
+          userData={{ name: "2" }}
         />
         <mesh
-          name="Text003"
+          name="3"
           castShadow
           receiveShadow
-          geometry={nodes.Text003.geometry}
-          material={nodes.Text003.material}
+          geometry={nodes["3"].geometry}
+          material={nodes["3"].material}
           position={[0, -0.001681, 0]}
           rotation={[0, -Math.PI / 2, 0]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.003" }}
+          userData={{ name: "3" }}
         />
         <mesh
-          name="Text004"
+          name="4"
           castShadow
           receiveShadow
-          geometry={nodes.Text004.geometry}
-          material={nodes.Text004.material}
+          geometry={nodes["4"].geometry}
+          material={nodes["4"].material}
           position={[0, -0.001681, 0]}
           rotation={[Math.PI, -Math.PI / 3, Math.PI]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.004" }}
+          userData={{ name: "4" }}
         />
         <mesh
-          name="Text005"
+          name="5"
           castShadow
           receiveShadow
-          geometry={nodes.Text005.geometry}
-          material={nodes.Text005.material}
+          geometry={nodes["5"].geometry}
+          material={nodes["5"].material}
           position={[0, -0.001681, 0]}
           rotation={[Math.PI, -Math.PI / 6, Math.PI]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.005" }}
+          userData={{ name: "5" }}
         />
         <mesh
-          name="Text006"
+          name="6"
           castShadow
           receiveShadow
-          geometry={nodes.Text006.geometry}
-          material={nodes.Text006.material}
+          geometry={nodes["6"].geometry}
+          material={nodes["6"].material}
           position={[0, -0.001681, 0]}
           rotation={[Math.PI, 0, Math.PI]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.006" }}
+          userData={{ name: "6" }}
         />
         <mesh
-          name="Text007"
+          name="7"
           castShadow
           receiveShadow
-          geometry={nodes.Text007.geometry}
-          material={nodes.Text007.material}
+          geometry={nodes["7"].geometry}
+          material={nodes["7"].material}
           position={[0, -0.001681, 0]}
           rotation={[-Math.PI, Math.PI / 6, -Math.PI]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.007" }}
+          userData={{ name: "7" }}
         />
         <mesh
-          name="Text008"
+          name="8"
           castShadow
           receiveShadow
-          geometry={nodes.Text008.geometry}
-          material={nodes.Text008.material}
+          geometry={nodes["8"].geometry}
+          material={nodes["8"].material}
           position={[0, -0.001681, 0]}
           rotation={[-Math.PI, Math.PI / 3, -Math.PI]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.008" }}
+          userData={{ name: "8" }}
         />
         <mesh
-          name="Text009"
+          name="9"
           castShadow
           receiveShadow
-          geometry={nodes.Text009.geometry}
-          material={nodes.Text009.material}
+          geometry={nodes["9"].geometry}
+          material={nodes["9"].material}
           position={[0, -0.001681, 0]}
           rotation={[0, Math.PI / 2, 0]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.009" }}
+          userData={{ name: "9" }}
         />
         <mesh
-          name="Text010"
+          name="10"
           castShadow
           receiveShadow
-          geometry={nodes.Text010.geometry}
-          material={nodes.Text010.material}
+          geometry={nodes["10"].geometry}
+          material={nodes["10"].material}
           position={[0, -0.001681, 0]}
           rotation={[0, Math.PI / 3, 0]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.010" }}
+          userData={{ name: "10" }}
         />
         <mesh
-          name="Text011"
+          name="11"
           castShadow
           receiveShadow
-          geometry={nodes.Text011.geometry}
-          material={nodes.Text011.material}
+          geometry={nodes["11"].geometry}
+          material={nodes["11"].material}
           position={[0, -0.001681, 0]}
           rotation={[0, Math.PI / 6, 0]}
           scale={[0.003314, 0.003314, 0.005239]}
-          userData={{ name: "Text.011" }}
+          userData={{ name: "11" }}
         />
         <mesh
           name="Wheel2"
@@ -321,6 +322,8 @@ export default function Model(props) {
         />
       </group>
     </group>
+
+   
     // THE REAL DEAL!
     // <group scale={35} ref={group} {...props} dispose={null}>
     //   <mesh
