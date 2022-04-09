@@ -1,5 +1,7 @@
 import React from 'react';
-import { isMobile } from 'react-device-detect';
+import dynamic from 'next/dynamic';
+
+const isMobile = dynamic(() => import('react-device-detect'));
 
 const Roadmap = () => {
   return (
