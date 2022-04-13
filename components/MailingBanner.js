@@ -51,7 +51,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 }
 
 const MailingBanner = () => {
-  const postUrl = `https://posteritywatches.us14.list-manage.com/subscribe/post?u=${process.env.MAILCHIMP_U}&id=${process.env.MAILCHIMP_ID}`;
+  const postUrl = `https://posteritywatches.us14.list-manage.com/subscribe/post?u=${process.env.NEXT_PUBLIC_MAILCHIMP_U}&id=${process.env.NEXT_PUBLIC_MAILCHIMP_ID}`;
 
   return (
     <div className="mailchimp bg-sky flex flex-col md:flex-row my-10">
