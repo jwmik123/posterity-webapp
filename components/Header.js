@@ -25,8 +25,8 @@ function Header() {
     <div className="top-0 z-50">
       <nav 
         className={ 
-          colorChange ? "z-50 flex w-full bg-gray fixed items-center justify-between py-2 px-5 md:px-20 lg:px-48" 
-          : "z-50 flex w-full items-center fixed justify-between py-10 px-5 md:px-20 lg:px-48"
+          colorChange ? "z-50 flex w-full bg-gray fixed items-center justify-between py-2 px-5 md:px-20 xl:px-48" 
+          : "z-50 flex w-full items-center fixed justify-between py-10 px-5 md:px-20 xl:px-48"
         }>
       <div className={
         colorChange ? " flex text-ketic font-staat text-2xl py-1 px-2 rounded h-18"

@@ -4,6 +4,7 @@ import LandingPage from "../components/LandingPage";
 import Roadmap from "../components/Roadmap";
 import Creators from "../components/Creators";
 import Banner from "../components/Banner";
+import MailingBanner from "../components/MailingBanner";
 import Footer from "../components/Footer";
 import Faq from "../components/FaqPage";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <LandingPage />
         <Banner />
         <Roadmap id="roadmap" />
+        <MailingBanner />
         <Creators />
         <Faq />
       </main>

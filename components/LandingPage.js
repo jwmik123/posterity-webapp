@@ -9,7 +9,7 @@ function LandingPage() {
   const { address, connectWallet } = useWeb3();
 
   return (
-    <div className="px-5 md:px-20 lg:px-48 lg:h-[100vh] font-roboto flex items-center relative text-slate-100">
+    <div className="px-5 md:px-20 xl:px-48 lg:h-[100vh] font-roboto flex items-center relative text-slate-100">
       <div className={`hidden lg:block relative md:absolute h-full w-1/2 right-0`}>
         <Canvas>
           <Suspense fallback={<Loader />}>

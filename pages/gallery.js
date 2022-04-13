@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Header from "../components/Header";
 import Filter from "../components/Filter";
-import Footer from '../components/Footer';
 
 export default function Gallery() {
   return (

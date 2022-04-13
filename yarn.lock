@@ -5154,7 +5154,7 @@ debounce@^1.2.1:
   resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.1.tgz#38881d8f4166a5c5848020c11827b834bcb3e0a5"
   integrity sha512-XRRe6Glud4rd/ZGQfiV1ruXSfbvfJedlV9Y6zOlP+2K04vBYiJEte6stfFkCP03aMnY5tsipamumUjL14fofug==
 
-debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
+debug@2.6.9, debug@^2.1.3, debug@^2.2.0, debug@^2.3.3, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
@@ -8101,6 +8101,13 @@ jsonify@~0.0.0:
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
   integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
+jsonp@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/jsonp/-/jsonp-0.2.1.tgz#a65b4fa0f10bda719a05441ea7b94c55f3e15bae"
+  integrity sha1-pltPoPEL2nGaBUQep7lMVfPhW64=
+  dependencies:
+    debug "^2.1.3"
+
 jsonwebtoken@^8.5.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
@@ -10485,6 +10492,15 @@ react-lottie@^1.2.3:
     babel-runtime "^6.26.0"
     lottie-web "^5.1.3"
 
+react-mailchimp-subscribe@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/react-mailchimp-subscribe/-/react-mailchimp-subscribe-2.1.3.tgz#2f195f20b98c9be9608fac95d1f4f5bcb2d81929"
+  integrity sha512-ZRuPZMnX/9pHQLnAQavsgB5xIF+gNqjNCCq1vvTs23cn+93W2oOp17qjg3LpDBEt1HJi6IHXMwpKXn0taY8FHw==
+  dependencies:
+    jsonp "^0.2.1"
+    prop-types "^15.5.10"
+    to-querystring "^1.0.4"
+
 react-merge-refs@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"
@@ -11934,6 +11950,11 @@ to-object-path@^0.3.0:
   integrity sha1-KXWIt7Dn4KwI4E5nL4XB9JmeF68=
   dependencies:
     kind-of "^3.0.2"
+
+to-querystring@^1.0.4:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/to-querystring/-/to-querystring-1.1.1.tgz#98de5b00c79768a98ca48a2c09a960238d960265"
+  integrity sha512-ZgIacl9TXAoT7sGXUYjQiy0MW7Tf/7CJQLt757hYHfXXc8JBzOVBMx4DckqKUO4hi36J72/m8UcH/GCHK+n97g==
 
 to-readable-stream@^1.0.0:
   version "1.0.0"
