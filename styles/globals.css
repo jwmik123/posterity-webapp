@@ -75,7 +75,6 @@ a {
     @apply cursor-pointer;
   }
 
-
   .creator {
     @apply text-center relative mb-20 box-content;
   }

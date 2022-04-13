@@ -39,7 +39,7 @@ function LandingPage() {
           )
         }
       </div>
-      <div className="bg-red-900 mt-36 w-full lg:hidden">
+      <div className="mt-36 w-full lg:hidden">
         <h1 className="text-6xl font-staat text-center">Posterity Watches</h1>
         <div className="flex justify-center">
         {address 

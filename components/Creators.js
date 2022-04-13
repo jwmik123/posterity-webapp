@@ -12,7 +12,7 @@ import watch6 from "../public/images/posterity.png";
 
 const Creators = () => {
   return (
-    <div className="py-20 mt-20 text-slate-100 flex flex-col items-center">
+    <div className="py-20 text-slate-100 flex flex-col items-center">
       <h1 className="text-7xl font-staat text-center mb-10" data-aos="fade-up">The team.</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-3/4">
   
