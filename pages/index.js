@@ -22,7 +22,7 @@ export default function Home() {
         <LandingPage />
         <Banner />
         <Roadmap id="roadmap" />
-        <MailingBanner />
+        {/* <MailingBanner /> */}
         <Creators />
         <Faq />
       </main>
