@@ -39,6 +39,10 @@
   font-display: swap;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html,
 body {
   padding: 0;
@@ -52,6 +56,13 @@ canvas {
   height: 100% !important;
 }
 
+/* .smooth-scroll-wrapper {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+} */
 
 a {
   color: inherit;
@@ -61,7 +72,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 
 /* h4 {
   @apply text-xl font-roboto;
@@ -80,7 +90,7 @@ a {
   }
 
   .banner-button {
-    @apply bg-gray text-ketic px-5 py-2 flex flex-row items-center gap-2 rounded-md text-lg hover:scale-105 transition
+    @apply bg-gray text-ketic px-5 py-2 flex flex-row items-center gap-2 rounded-md text-lg hover:scale-105 transition;
   }
 
   .roadmap-piece {
