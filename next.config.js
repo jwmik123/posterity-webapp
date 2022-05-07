@@ -1,13 +1,18 @@
-
-const withTM = require('next-transpile-modules')(['@splinetool/react-spline', '@splinetool/runtime']);
+const withTM = require("next-transpile-modules")(["react-spring"]);
 
 module.exports = withTM({
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /react-spring/,
+      sideEffects: true,
+    });
+    return config;
+  },
   experimental: {
-    runtime: 'nodejs',
+    runtime: "nodejs",
   },
   reactStrictMode: true,
   images: {
-    domains: ['posterity.mypinata.cloud'],
+    domains: ["posterity.mypinata.cloud"],
   },
-})
-
+});
